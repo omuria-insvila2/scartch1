@@ -400,6 +400,64 @@ button{font:inherit;color:inherit}
 .dicdlg{max-width:760px}
 .dicdlg h3{margin-top:14px}
 .gdlg>*{flex-shrink:0}
+.goal{margin-bottom:16px;padding:14px 18px;border-radius:14px;background:color-mix(in srgb,var(--ev) 14%,var(--surface));border:2px solid var(--ev)}
+.goal h3{font:22px var(--f-display);margin:0 0 6px}
+.goal ul{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:4px;font-size:18px;max-width:46em}
+.goal .gtip{margin-top:8px}
+.pwbox{display:flex;flex-direction:column;gap:6px;margin-top:10px;padding:12px;border-radius:12px;border:2px solid var(--line);background:var(--surface2);max-width:460px}
+.pwrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pwrow input{font:700 18px var(--f-body);padding:8px 10px;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--ink);min-width:0;flex:1}
+/* ---------- algorithm in words ---------- */
+.algo{margin:4px 0 14px;border-radius:14px;border:2px solid var(--se);background:var(--surface)}
+.algo>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:10px 14px;font:700 17px var(--f-body);color:var(--ink)}
+.algo>summary::-webkit-details-marker{display:none}
+.algo>summary::after{content:"▾";margin-left:auto;color:var(--muted)}
+.algo[open]>summary::after{content:"▴"}
+.algobody{padding:4px 16px 14px;display:flex;flex-direction:column;gap:10px}
+.algobody .tx{font-size:18px;line-height:1.55}
+.algo h4{font:19px var(--f-display);margin:8px 0 2px}
+.algo ol{margin:0;padding-left:1.4em}
+.algo ol ol{padding-left:1.5em;border-left:3px solid var(--line);margin:2px 0 4px}
+.algo li{margin:3px 0}
+.algo li.an>span{background:color-mix(in srgb,var(--ev) 26%,transparent);border-radius:4px;padding:0 3px}
+.algo .alegend{font-size:15px;color:var(--muted)}
+.algo .mk,.algo li.an>span{background:color-mix(in srgb,var(--ev) 30%,transparent);border-radius:4px;padding:0 3px}
+.warnx{display:flex;align-items:center;gap:12px;margin:2px 0 14px;padding:12px 16px;border-radius:14px;background:color-mix(in srgb,var(--bad) 14%,var(--surface));border:3px solid var(--bad);color:var(--ink)}
+.warnx p{font-size:18px}
+.warnx b{color:var(--bad);font-size:20px}
+.warnic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--bad);color:#fff;display:grid;place-items:center;font:28px var(--f-display)}
+.warnx .say{color:var(--bad)}
+.sayrow>span.warnic{flex:0 0 38px}
+/* ---------- com es fa ---------- */
+.stx{display:flex;flex-direction:column;gap:6px;min-width:0}
+.howtos{display:flex;flex-wrap:wrap;gap:6px}
+.howbtn{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:99px;border:2px solid var(--mo);background:var(--surface);color:var(--ink);font:700 14px var(--f-body);cursor:pointer}
+.howbtn::before{content:"?";width:18px;height:18px;border-radius:50%;background:var(--mo);color:#fff;display:inline-grid;place-items:center;font-size:12px}
+.howbtn:hover{background:color-mix(in srgb,var(--mo) 12%,var(--surface))}
+.newspr{margin-bottom:14px;padding:14px 18px;border-radius:14px;border:3px solid var(--mo);background:color-mix(in srgb,var(--mo) 10%,var(--surface))}
+.newspr h3{font:22px var(--f-display);margin:0 0 6px}
+.newspr ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px;font-size:18px}
+.needs2{margin-top:8px;font-size:17px;font-weight:700;color:var(--ink);padding:8px 12px;border-radius:10px;background:color-mix(in srgb,var(--mo) 14%,var(--surface));border:2px solid var(--mo)}
+.howdlg .eyebrow2{font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mo)}
+.howsteps{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:10px;font-size:18px;line-height:1.55}
+
+/* ---------- depurador ---------- */
+.dbgcta{display:flex;flex-direction:column;gap:6px;margin-top:14px;padding-top:12px;border-top:2px dashed var(--line)}
+.dbgcta .btn{align-self:flex-start;background:var(--co);color:#fff;border-color:var(--co)}
+.gdlg.dbgdlg{max-width:1180px;width:calc(100vw - 32px)}
+.dbggrid{display:grid;grid-template-columns:minmax(0,480px) minmax(0,1fr);gap:16px;align-items:start}
+.dbgleft{display:flex;flex-direction:column;gap:10px;min-width:0}
+.dbgcv{width:100%;height:auto;border-radius:12px;border:2px solid var(--line);background:#000;touch-action:none}
+.dbgbar{display:flex;flex-wrap:wrap;gap:8px}
+.dbgbar .btn{padding:10px 14px;font-size:16px}
+.dbgstat{min-height:70px;padding:10px 14px;border-radius:12px;background:var(--surface2);border:2px solid var(--line);display:flex;flex-direction:column;gap:6px;font-size:17px}
+.dbgstat .dlast{color:var(--muted);font-size:15px}
+.dbgcode{max-height:70vh;overflow:auto;padding:10px;border-radius:12px;border:2px solid var(--line);background:var(--surface)}
+.dbgcode .b.dnowb,.dbgcode .b.c.dnowb>.row{outline:3px dashed #E58A00;outline-offset:3px}
+.dbgkeys{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.dkey{min-width:52px;height:44px;padding:0 12px;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:700 18px var(--f-body);cursor:pointer}
+.dkey[aria-pressed="true"]{background:var(--ev);border-color:var(--ev);color:#222}
+@media (max-width:900px){.dbggrid{grid-template-columns:minmax(0,1fr)}.dbgcode{max-height:none}}
 
 .missions.six{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:860px){.missions.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -433,7 +491,7 @@ function fmt(s){let out='',i=0;while(i<s.length){const ch=s[i];
   else{out+=esc(ch);i++}}
  return out}
 function blk(b){const cls=['b',b.c];if(b.hat)cls.push('hat');
- const gk=glossFor(b.t,b.c,'b',b.t2);const at=(gk?` data-g="${gk}"`:'')+(b.k?` data-k="${b.k}"`:'')+(b.id?` data-id="${b.id}" tabindex="0" role="button"`:'');
+ const gk=glossFor(b.t,b.c,'b',b.t2);const at=(gk?` data-g="${gk}"`:'')+(b.k?` data-k="${b.k}"`:'')+(b.id?` data-id="${b.id}" tabindex="0" role="button"`:'')+(b.dbi!=null?` data-bi="${b.dbi}"`:'');
  const badge=b.nw?'<em class="nou">NOU</em>':'';
  if(b.body){const mid=b.t2?`<div class="mid">${fmt(b.t2)}</div><div class="inner">${(b.body2||[]).map(blk).join('')}</div>`:'';
   return `<div class="${cls.join(' ')} c"${at}><div class="row">${fmt(b.t)}${badge}</div><div class="inner">${b.body.map(blk).join('')}</div>${mid}<div class="foot"></div></div>`}
@@ -451,7 +509,7 @@ const GRULES=[
  ['mou',t=>/^mou-te/.test(t)],['gira',t=>/^gira /.test(t)],['vesxy',t=>/^ves a x:/.test(t)],['vespos',t=>/^ves a \[/.test(t)],['llisca',t=>/^llisca/.test(t)],
  ['sumax',t=>/^suma .* a x$/.test(t)],['sumay',t=>/^suma .* a y$/.test(t)],['assignaxy',t=>/^assigna el valor .* a [xy]$/.test(t)],
  ['apunta',t=>/^apunta en direcció/.test(t)],['apuntacap',t=>/^apunta cap a/.test(t)],['rebota',t=>/^rebota en tocar/.test(t)],['rotacio',t=>/^fixa el tipus de rotació/.test(t)],
- ['posxy',t=>/^posició [xy]$/.test(t)],['direccio',t=>/^direcció$/.test(t)],
+ ['posxy',t=>/^posició [xy]$/.test(t)],['deltre',t=>/^posició [xy] de /.test(t)],['direccio',t=>/^direcció$/.test(t)],
  ['digues',t=>/^digues/.test(t)],['amagamostra',t=>/^(amaga't|mostra't)$/.test(t)],['vestit',t=>/vestit/.test(t)],['efecte',t=>/l'efecte/.test(t)],['mida',t=>/^fixa la mida a/.test(t)],['fons',t=>/^(canvia el fons|següent fons)/.test(t)],
  ['so',t=>/^(inicia el so|toca el so)/.test(t)],['nota',t=>/^toca la nota/.test(t)],
  ['esperafins',t=>/^espera fins/.test(t)],['espera',t=>/^espera /.test(t)],['persempre',t=>/^per sempre$/.test(t)],['repfins',t=>/^repeteix fins/.test(t)],['repeteix',t=>/^repeteix/.test(t)],
@@ -506,7 +564,7 @@ class Sim{
   const keys=E.pad?E.pad(lvl):[];this.keys=keys;const arrows=ARR.every(k=>keys.includes(k));const rest=keys.filter(k=>!(arrows&&ARR.includes(k)));
   const btn=k=>`<button type="button" data-key="${k}"${arrows&&ARR.includes(k)?` data-dir="${k}"`:''} aria-label="${KEYARIA[k]}">${KEYLAB[k]}</button>`;
   const pad=(arrows?`<div class="pad" role="group" aria-label="Fletxes">${ARR.map(btn).join('')}</div>`:'')+(rest.length?`<div class="pad free" role="group" aria-label="Tecles">${rest.map(btn).join('')}</div>`:'');
-  host.innerHTML=`<div class="stage"><canvas width="480" height="360" role="img" aria-label="Simulació del joc"></canvas></div><form class="askrow" hidden><label for="askin"></label><input id="askin" autocomplete="off" autocapitalize="off" spellcheck="false"><button type="submit" aria-label="Respon">✓</button></form><div class="simbar"><button type="button" class="flagbtn">${FLAG}<span>Comença</span></button><button type="button" class="stopbtn"><span class="stopi"></span><span>Atura</span></button>${pad}</div>`;
+  host.innerHTML=`<div class="stage"><canvas width="480" height="360" role="img" aria-label="Simulació del joc"></canvas></div><div class="askrow" role="group" hidden><label for="askin"></label><input id="askin" autocomplete="off" autocapitalize="off" spellcheck="false"><button type="button" class="askok" aria-label="Respon">✓</button></div><div class="simbar"><button type="button" class="flagbtn">${FLAG}<span>Comença</span></button><button type="button" class="stopbtn"><span class="stopi"></span><span>Atura</span></button>${pad}</div>`;
   const cv=host.querySelector('canvas');this.cv=cv;this.c=cv.getContext('2d');cv.style.touchAction=E.mouse?'none':'manipulation';
   const S=this.S={lvl,running:false,idle:true,over:null,say:'',mx:0,my:0,held:new Set(),t:0,dt:0};
   E.init(S,this);
@@ -514,7 +572,7 @@ class Sim{
   cv.addEventListener('pointermove',e=>{const[x,y]=pos(e);S.mx=x;S.my=y});
   cv.addEventListener('pointerdown',e=>{const[x,y]=pos(e);S.mx=x;S.my=y;if(E.mouse)e.preventDefault();if(S.running&&E.click)E.click(S,x,y,this)});
   this.form=host.querySelector('.askrow');this.inp=host.querySelector('#askin');
-  this.form.addEventListener('submit',e=>{e.preventDefault();if(!this.askTh)return;S.answer=this.inp.value;this.inp.value='';this.form.hidden=true;this.askTh.asking=false;this.askTh=null;S.ask=null});
+  const sendAns=()=>{if(!this.askTh)return;S.answer=this.inp.value;this.inp.value='';this.form.hidden=true;this.askTh.asking=false;this.askTh=null;S.ask=null};this.form.querySelector('.askok').addEventListener('click',sendAns);this.inp.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();sendAns()}});
   host.querySelector('.flagbtn').onclick=()=>this.start();
   host.querySelector('.stopbtn').onclick=()=>this.stop();
   host.querySelectorAll('[data-key]').forEach(b=>{const k=b.dataset.key;let iv=null;
@@ -627,8 +685,55 @@ function mountPuzzle(el,i){const p=GAMES[CG].M[i].puzzle;const was=me().puz.incl
    b.addEventListener('click',fn);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn(e)}})})}}
 
 /* ===================== builder (Construeix el codi) ===================== */
-function buildSpec(m){let n=0,g=0;const slots=[];const walk=b=>{const o=Object.assign({},b);if(b.g)g++;else{o.slot=n++;slots.push(b)}if(b.body)o.body=b.body.map(walk);if(b.body2)o.body2=b.body2.map(walk);return o};
+const shapeOf=t=>String(t).replace(/\{[^{}]*\}/g,'{}');
+/* a block is shown already built only if the kids built the same block in an earlier mission of this game */
+function givenTest(m){let gi=-1,mi=-1;GAMES.forEach((G,g)=>{const j=G.M.indexOf(m);if(j>=0){gi=g;mi=j}});const seen=new Set();
+ if(gi>=0){const add=b=>{seen.add(shapeOf(b.t));(b.body||[]).forEach(add);(b.body2||[]).forEach(add)};for(let j=0;j<mi;j++)(GAMES[gi].M[j].scripts||[]).forEach(sc=>sc.b.forEach(add))}
+ return b=>!!b.g&&(seen.has(shapeOf(b.t))||/^quan la ⚑ es cliqui$/.test(b.t))}
+function buildSpec(m){const isG=givenTest(m);let n=0,g=0;const slots=[];const walk=b=>{const o=Object.assign({},b);if(isG(b))g++;else{o.slot=n++;slots.push(b)}if(b.body)o.body=b.body.map(walk);if(b.body2)o.body2=b.body2.map(walk);return o};
  const trees=m.scripts.map(sc=>({spr:sc.spr,tag:sc.tag,b:sc.b.map(walk)}));return{trees,slots,hasGiven:g>0}}
+/* ---- ordre equivalent: dos blocs seguits es poden intercanviar si no es molesten ---- */
+function effOf(n,pen){const t=n.t||'',c=n.c,Rd=new Set(),Wr=new Set(),Ad=new Set();let bar=!!n.hat;
+ for(const q of t.matchAll(/‹va:([^‹›]+)›/g))Rd.add('v:'+q[1]);
+ for(const q of t.matchAll(/‹li:[^›‹]*?\[([^\]]+)\]/g))Rd.add('l:'+q[1]);
+ for(const q of t.matchAll(/‹li:([^‹›\[\] ]+)›/g))Rd.add('l:'+q[1]);
+ if(/‹mo:posició x›/.test(t))Rd.add('x');if(/‹mo:posició y›/.test(t))Rd.add('y');if(/‹mo:direcció›/.test(t))Rd.add('d');
+ if(/tocant|distància/.test(t))['x','y','d','cos','size','vis','pen'].forEach(k=>Rd.add(k));
+ if(/‹lo:(vestit|nom del vestit|número del vestit)/.test(t))Rd.add('cos');if(/‹lo:mida›/.test(t))Rd.add('size');
+ if(/‹se:resposta›/.test(t))Rd.add('ans');if(/cronòmetre/.test(t))Rd.add('timer');
+ const w=(...k)=>k.forEach(x=>Wr.add(x));
+ if(n.body){if(!/^si /.test(t))bar=true;
+  else[...(n.body||[]),...(n.body2||[])].forEach(b=>{const e=effOf(b,pen);if(e.bar)bar=true;e.R.forEach(x=>Rd.add(x));e.W.forEach(x=>Wr.add(x));e.A.forEach(x=>Ad.add(x))});
+  return{R:Rd,W:Wr,A:Ad,bar}}
+ if(c==='mo'){if(/^suma .* a x$/.test(t))Ad.add('x');else if(/^suma .* a y$/.test(t))Ad.add('y');else if(/^assigna el valor .* a x$/.test(t))w('x');else if(/^assigna el valor .* a y$/.test(t))w('y');
+  else if(/^(gira|apunta|fixa la direcció)/.test(t))w('d');else if(/^fixa el tipus de rotació/.test(t))w('rot');
+  else if(/^llisca/.test(t))bar=true;else{w('x','y','d');['x','y','d'].forEach(k=>Rd.add(k))}
+  if(pen&&(Wr.size||Ad.size))w('pen')}
+ else if(c==='lo'){if(/durant|fons/.test(t))bar=true;else if(/vestit/.test(t))w('cos');else if(/efecte/.test(t))w('fx');else if(/mida/.test(t))w('size');
+  else if(/^(mostra|amaga)$/.test(t))w('vis');else if(/^(digues|pensa)/.test(t))w('say');else if(/capa/.test(t))w('layer');else bar=true}
+ else if(c==='so'){if(/fins que acabi/.test(t))bar=true;else if(/^(inicia el so|toca el so)/.test(t))w('snd');else if(/volum|efecte/.test(t))w('sndfx');else bar=true}
+ else if(c==='va'){const q=t.match(/^(assigna a|augmenta) \[([^\]]+)\]/);if(q){if(q[1]==='augmenta')Ad.add('v:'+q[2]);else w('v:'+q[2])}else if(/la variable/.test(t))w('mon');else bar=true}
+ else if(c==='li'){const L=[...t.matchAll(/\[([^\]]+)\]/g)];if(L.length)L.forEach(q=>w('l:'+q[1]));else bar=true}
+ else if(c==='pe'){if(/nota|tambor|pulsacions|silenci/.test(t))bar=true;else if(/instrument|tempo/.test(t))w('music');else{w('pen');Rd.add('x');Rd.add('y')}}
+ else if(c==='se'){if(/reinicia el cronòmetre/.test(t))w('timer');else if(/arrossega/.test(t))w('drag');else bar=true}
+ else bar=true;
+ return{R:Rd,W:Wr,A:Ad,bar}}
+function indepB(a,b,pen){const A=effOf(a,pen),B=effOf(b,pen);if(A.bar||B.bar)return false;
+ const hit=(P,Q)=>{for(const x of P.W)if(Q.W.has(x)||Q.R.has(x)||Q.A.has(x))return true;for(const x of P.A)if(Q.R.has(x))return true;return false};
+ return !hit(A,B)&&!hit(B,A)}
+function canonB(n,pen){if(n.empty)return null;const a=canonSeq(n.body,pen),b=canonSeq(n.body2,pen);if(a===null||b===null)return null;return n.c+'|'+n.t+'|'+(n.t2||'')+'{'+a+'}{'+b+'}'}
+function canonSeq(L,pen){if(!L)return '';const k=L.map(n=>canonB(n,pen));if(k.includes(null))return null;const a=L.map((n,i)=>[n,k[i]]);
+ for(let ch=true,g=0;ch&&g<500;g++){ch=false;for(let i=0;i+1<a.length;i++)if(a[i][1]>a[i+1][1]&&indepB(a[i][0],a[i+1][0],pen)){[a[i],a[i+1]]=[a[i+1],a[i]];ch=true}}
+ return a.map(x=>x[1]).join(';')}
+const shapeEq=(a,b)=>(a.body||[]).length===(b.body||[]).length&&(a.body2||[]).length===(b.body2||[]).length&&!!a.body===!!b.body&&(a.body||[]).every((x,i)=>shapeEq(x,b.body[i]))&&(a.body2||[]).every((x,i)=>shapeEq(x,b.body2[i]));
+/* reordena la resposta (dins del que és permès) perquè s'assembli al màxim al que ha fet l'infant; omple exp[slot] */
+function alignSeq(sk,ans,kid,exp,pen){const A=ans.slice();
+ for(let p=0;p<A.length;p++){const ck=canonB(kid[p],pen);if(ck===null)continue;if(canonB(A[p],pen)===ck)continue;
+  for(let q=p+1;q<A.length;q++){if(canonB(A[q],pen)===ck){let ok=true;for(let r=p;r<q;r++)if(!indepB(A[q],A[r],pen)){ok=false;break}
+    if(ok){const [x]=A.splice(q,1);A.splice(p,0,x)}break}}}
+ sk.forEach((S,p)=>{const E=shapeEq(A[p],S)?A[p]:ans[p];if(S.slot!==undefined)exp[S.slot]=E;
+  if(S.body)alignSeq(S.body,E.body,kid[p].body,exp,pen);if(S.body2)alignSeq(S.body2,E.body2,kid[p].body2,exp,pen)})}
+const usesPen=m=>JSON.stringify(m.scripts||[]).match(/"c":"pe","t":"(baixa|puja|esborra-ho tot|segell|fixa .* del llapis|augmenta .* del llapis)/)!==null;
 const cleanB=b=>({c:b.c,t:b.t,hat:b.hat,body:b.body?[]:undefined,t2:b.t2,body2:b.t2?[]:undefined});
 function mountBuild(el,i,onDone){const m=GAMES[CG].M[i],p=me();const {trees,slots,hasGiven}=buildSpec(m);
  const tiles=shuffle(slots.map((b,j)=>({id:'t'+j,b:cleanB(b)})).concat((m.distract||[]).map((b,j)=>({id:'x'+j,b:cleanB(b)}))));
@@ -636,10 +741,14 @@ function mountBuild(el,i,onDone){const m=GAMES[CG].M[i],p=me();const {trees,slot
  const same=(tb,b)=>tb.t===b.t&&tb.c===b.c&&(tb.t2||'')===(b.t2||'');
  let fills=slots.map(()=>null),marks=false,done=p.built.includes(i)||p.done.includes(i);
  if(done){const used=new Set();slots.forEach((b,j)=>{const t=tiles.find(t=>!used.has(t.id)&&same(t.b,b));if(t){used.add(t.id);fills[j]=t.id}})}
- const okAt=j=>fills[j]!=null&&same(T(fills[j]).b,slots[j]);
+ const pen=usesPen(m);let exp=slots.slice();
+ const recompute=()=>{exp=slots.slice();const kidN=S=>{let o;if(S.slot!==undefined){const f=fills[S.slot];o=f!=null?Object.assign({},T(f).b):{empty:1}}else o={c:S.c,t:S.t,t2:S.t2,hat:S.hat};
+   if(S.body)o.body=S.body.map(kidN);if(S.body2)o.body2=S.body2.map(kidN);return o};
+  try{trees.forEach(sc=>alignSeq(sc.b,sc.b,sc.b.map(kidN),exp,pen))}catch(e){exp=slots.slice()}};
+ const okAt=j=>fills[j]!=null&&same(T(fills[j]).b,exp[j]);
  const firstEmpty=()=>fills.indexOf(null);
- const intro=(hasGiven?"Una part del codi ja hi és (la més clara). Omple els forats amb les peces que falten.":"Les instruccions estan barrejades. Toca-les en l'ordre correcte: cada peça va al primer forat buit.")+(m.distract?" Compte: hi ha una peça que sobra!":"")+" Si t'equivoques, toca la peça del programa i tornarà a les peces.";
- el.innerHTML=`<div class="sayrow"><p class="bintro tx">${intro}</p>${sayBtn()}</div><div class="ord"><div><div class="lab">Peces barrejades</div><div class="pal"></div></div><div><div class="lab">El teu programa</div><div class="bscripts"></div></div></div><div class="pbtns"><button type="button" class="btn chk">Comprova</button><button type="button" class="btn ghost hlp">Ajuda'm amb una peça</button><button type="button" class="btn ghost rst">Torna a començar</button></div><p class="fb" aria-live="polite"></p>`;
+ const intro=(hasGiven?"Una part del codi ja hi és (la més clara). Omple els forats amb les peces que falten.":"Les instruccions estan barrejades. Toca-les en l'ordre correcte: cada peça va al primer forat buit.")+" Si t'equivoques, toca la peça del programa i tornarà a les peces.";
+ el.innerHTML=`<div class="sayrow"><p class="bintro tx">${intro}</p>${sayBtn()}</div>${m.distract?`<div class="warnx sayrow" role="alert"><span class="warnic" aria-hidden="true">!</span><p class="tx"><b>Compte: hi ha una peça que sobra!</b> Entre les peces barrejades n'hi ha una que no va al programa. Busca-la i no la facis servir.</p>${sayBtn()}</div>`:''}${algoHTML(m,hasGiven,givenTest(m))}<div class="ord"><div><div class="lab">Peces barrejades</div><div class="pal"></div></div><div><div class="lab">El teu programa</div><div class="bscripts"></div></div></div><div class="pbtns"><button type="button" class="btn chk">Comprova</button><button type="button" class="btn ghost hlp">Ajuda'm amb una peça</button><button type="button" class="btn ghost rst">Torna a començar</button></div><p class="fb" aria-live="polite"></p>`;
  const pal=el.querySelector('.pal'),bs=el.querySelector('.bscripts'),fb=el.querySelector('.fb'),btns=el.querySelector('.pbtns');
  const say=(cls,msg)=>{fb.className='fb '+cls;fb.textContent=msg};
  const node=b=>{const has=b.slot!==undefined;const tb=has?(fills[b.slot]!=null?T(fills[b.slot]).b:null):b;
@@ -650,11 +759,11 @@ function mountBuild(el,i,onDone){const m=GAMES[CG].M[i],p=me();const {trees,slot
    return `<div class="b c ${tb?tb.c:'emptyc'}${cls}"${at}><div class="row">${head}</div><div class="inner">${b.body.map(node).join('')}</div>${mid}<div class="foot"></div></div>`}
   if(tb)return `<div class="b ${tb.c}${tb.hat?' hat':''}${cls}"${at}>${fmt(tb.t)}</div>`;
   return `<div class="slot${cls}"${at}><span class="slotn">${b.slot+1}</span></div>`};
- const check=auto=>{const empty=fills.filter(x=>x==null).length;
+ const check=auto=>{recompute();const empty=fills.filter(x=>x==null).length;
   if(empty){if(!auto)say('no',empty===1?"Falta 1 peça.":`Falten ${empty} peces.`);return}
   const wrong=slots.filter((_,j)=>!okAt(j)).length;
   if(!wrong){done=true;marks=false;if(!p.built.includes(i)){p.built.push(i);save()}draw();SFX.ok();say('ok',"Molt bé! Has construït el programa. Ara el codi apareix al pas 1: clica «Comença» i mira com s'encenen els blocs.");onDone();return}
-  marks=true;draw();SFX.no();say('no',wrong===1?"Hi ha 1 peça fora de lloc. Està marcada amb ✕: toca-la per treure-la.":`Hi ha ${wrong} peces fora de lloc. Estan marcades amb ✕: toca-les per treure-les.`)};
+  marks=true;draw();SFX.no();const noX=fills.every(id=>id[0]==='t');say('no',(noX?"Has triat les peces bones, però alguna no està en un ordre que funcioni. ":"")+(wrong===1?"Hi ha 1 peça fora de lloc. Està marcada amb ✕: toca-la per treure-la.":`Hi ha ${wrong} peces fora de lloc. Estan marcades amb ✕: toca-les per treure-les.`))};
  const draw=()=>{btns.hidden=done;pal.innerHTML='';const used=new Set(fills.filter(Boolean));
   tiles.filter(t=>!used.has(t.id)).forEach(t=>{const d=document.createElement('div');d.className='tile';d.innerHTML=stack([t.b]);
    if(!done){d.setAttribute('aria-label','Posa aquesta peça al programa');asBtn(d,()=>{const k=firstEmpty();if(k<0){say('no',"No queden forats. Treu una peça del programa si la vols canviar.");return}fills[k]=t.id;marks=false;say('','');draw();if(firstEmpty()<0)check(true)})}
@@ -664,9 +773,9 @@ function mountBuild(el,i,onDone){const m=GAMES[CG].M[i],p=me();const {trees,slot
   if(!done)bs.querySelectorAll('[data-slot]').forEach(s=>{const k=+s.dataset.slot;if(fills[k]==null)return;const tgt=s.classList.contains('c')?s.querySelector(':scope>.row'):s;tgt.setAttribute('aria-label','Treu aquesta peça');asBtn(tgt,e=>{e.stopPropagation();fills[k]=null;marks=false;say('','');draw()})})};
  el.querySelector('.chk').onclick=()=>check(false);
  el.querySelector('.rst').onclick=()=>{fills=slots.map(()=>null);marks=false;say('','');draw()};
- el.querySelector('.hlp').onclick=()=>{if(done)return;let k=slots.findIndex((_,j)=>fills[j]!=null&&!okAt(j));if(k<0)k=firstEmpty();if(k<0)return;fills[k]=null;
-  const used=new Set(fills.filter(Boolean));let t=tiles.find(t=>!used.has(t.id)&&same(t.b,slots[k]));
-  if(!t){const j=fills.findIndex((id,j)=>id&&!okAt(j)&&same(T(id).b,slots[k]));if(j>=0){t=T(fills[j]);fills[j]=null}}
+ el.querySelector('.hlp').onclick=()=>{if(done)return;recompute();let k=slots.findIndex((_,j)=>fills[j]!=null&&!okAt(j));if(k<0)k=firstEmpty();if(k<0)return;fills[k]=null;
+  const used=new Set(fills.filter(Boolean));let t=tiles.find(t=>!used.has(t.id)&&same(t.b,exp[k]));
+  if(!t){const j=fills.findIndex((id,j)=>id&&!okAt(j)&&same(T(id).b,exp[k]));if(j>=0){t=T(fills[j]);fills[j]=null}}
   if(!t)return;fills[k]=t.id;marks=false;say('','');draw();if(firstEmpty()<0)check(true)};
  draw();if(done)say('ok',"Ja l'has construït. El codi és al pas 1.")}
 
@@ -712,11 +821,15 @@ function viewHome(){const doneN=GAMES.filter((_,gi)=>gameDone(gi)).length;
     <li>El progrés es desa en aquest navegador i en aquest ordinador. Al final de cada missió hi ha un botó per esborrar-la si cal repetir-la.</li>
    </ul>
    <label class="allrow" for="allun"><input type="checkbox" id="allun" ${ST.all?'checked':''}> Mode adults: desbloqueja tots els jocs i totes les missions</label>
+   <div class="pwbox" id="pwall" role="group" hidden><label for="pwa">Escriu la contrasenya d'adults:</label><div class="pwrow"><input type="password" id="pwa" autocomplete="off"><button type="button" class="btn small" id="pwgo">Activa</button><button type="button" class="btn ghost small" id="pwcancel">Cancel·la</button></div><p class="fb" aria-live="polite"></p></div>
   </section>
  </main>`;
  app.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>go('game',+b.dataset.g));
  const nm=app.querySelector('#pname');nm.addEventListener('change',()=>{ST.name=nm.value.trim();save();go('home')});
- app.querySelector('#allun').onchange=e=>{ST.all=e.target.checked;save();go('home')};
+ const au=app.querySelector('#allun'),pf=app.querySelector('#pwall');
+ au.onchange=()=>{if(!au.checked){ST.all=false;save();go('home');return}au.checked=false;pf.hidden=false;pf.querySelector('#pwa').focus()};
+ app.querySelector('#pwcancel').onclick=()=>{pf.hidden=true;pf.querySelector('.fb').textContent=''};
+ const tryPw=()=>{if(pwOK(pf.querySelector('#pwa').value)){ST.all=true;save();go('home')}else{const f=pf.querySelector('.fb');f.className='fb no';f.textContent='Contrasenya incorrecta. Torna-ho a provar.';pf.querySelector('#pwa').value='';pf.querySelector('#pwa').focus()}};app.querySelector('#pwgo').onclick=tryPw;pf.querySelector('#pwa').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();tryPw()}});
  app.querySelectorAll('[data-thumb]').forEach(cv=>thumb(cv,GAMES[+cv.dataset.thumb]))}
 
 function diplomaHTML(){const d=new Date().toLocaleDateString('ca-ES',{day:'numeric',month:'long',year:'numeric'});
@@ -770,7 +883,7 @@ function viewLevel(i){const G=GAMES[CG];if(!gameUnlocked(CG)||!unlocked(i)){go('
  const m=G.M[i],p=me();const steps=p.steps[i]||[];const isEd=m.sim==='editor';const L=simLvl(G,i);
  const built=isEd||p.built.includes(i)||p.done.includes(i);
  const widget=m.widget||'';
- const codeHTML=()=>`${m.scripts.map(sc=>`<div class="spr"><div class="sprname">${ICON(sc.spr)}${sc.spr}${sc.tag?`<em>${sc.tag}</em>`:''}</div>${stack(sc.b)}</div>`).join('')}${m.scriptnote?`<p class="scriptnote">${m.scriptnote}</p>`:''}`;
+ const codeHTML=()=>`${m.scripts.map(sc=>`<div class="spr"><div class="sprname">${ICON(sc.spr)}${sc.spr}${sc.tag?`<em>${sc.tag}</em>`:''}</div>${stack(sc.b)}</div>`).join('')}${m.scriptnote?`<p class="scriptnote">${m.scriptnote}</p>`:''}<div class="dbgcta"><button type="button" class="btn dbgopen">▶ Executa el codi pas a pas</button><p class="simnote">Mira com l'ordinador fa cada bloc, un per un, i què passa a l'escenari.</p></div>`;
  const hiddenHTML=`<div class="hiddencode">${LOCK}<p><b>El codi està amagat.</b><br>Construeix-lo al pas 2 i apareixerà aquí.</p></div>`;
  let n=0;const num=()=>++n;
  const needTxt=[!isEd?'construeix el codi':'',m.puzzle?'resol el «Pensa»':''].filter(Boolean).join(' i ');
@@ -784,6 +897,7 @@ function viewLevel(i){const G=GAMES[CG];if(!gameUnlocked(CG)||!unlocked(i)){go('
  <main class="wrap lvmain">
   <section class="idea ${m.col}"><h2>La idea: ${m.concept.toLowerCase()}</h2><div class="sayrow"><p class="tx">${m.idea}</p>${sayBtn()}</div>${glossBar(CG,i)}</section>
   <section class="sec"><h2><span class="stepn">${num()}</span>${isEd?"Coneix l'editor":'Mira què ha de fer'}</h2>
+   ${m.goal?`<div class="goal"><div class="sayrow"><div class="tx"><h3>Què has d'aconseguir${isEd?'':' en aquesta missió'}</h3><ul>${m.goal.map(g=>`<li>${g}</li>`).join('')}</ul>${needsLine(CG,i)}</div>${sayBtn()}</div>${isEd?'':'<p class="gtip">Clica «Comença» a la demostració per veure-ho. Al pas 2 construiràs el codi que ho fa.</p>'}</div>`:''}
    <div class="${isEd?'':'watchgrid'}"><div class="simcol"><div class="simhost"></div>${m.note?`<p class="simnote">${m.note}</p>`:''}${widget}</div>${isEd?'':`<div class="scripts" aria-label="Programes">${built?codeHTML():hiddenHTML}</div>`}</div>
   </section>
   ${isEd?'':`<section class="sec"><h2><span class="stepn">${num()}</span>Construeix el codi</h2><div class="build"></div></section>`}
@@ -791,7 +905,7 @@ function viewLevel(i){const G=GAMES[CG];if(!gameUnlocked(CG)||!unlocked(i)){go('
   <section class="sec"><h2><span class="stepn">${num()}</span>Ara fes-ho a Scratch</h2>
    <p class="locked" ${built?'hidden':''}>Primer construeix el codi al pas 2. Després el podràs fer a Scratch.</p>
    <div class="scratchsteps" ${built?'':'hidden'}>
-   <ol class="steps">${m.steps.map((s,j)=>`<li class="${steps[j]?'checked':''}"><input type="checkbox" id="st-${i}-${j}" ${steps[j]?'checked':''} aria-label="Pas ${j+1} fet"><label class="tx" for="st-${i}-${j}">${s}</label>${sayBtn()}</li>`).join('')}</ol>
+   ${newSprBox(CG,i)}<ol class="steps">${m.steps.map((s,j)=>`<li class="${steps[j]?'checked':''}"><input type="checkbox" id="st-${i}-${j}" ${steps[j]?'checked':''} aria-label="Pas ${j+1} fet"><div class="stx"><label class="tx" for="st-${i}-${j}">${s}</label>${howtoBtns(s)}</div>${sayBtn()}</li>`).join('')}</ol>
    ${m.tip?`<p class="tipbox">${m.tip}</p>`:''}
    <details class="hint"><summary>No em funciona…</summary><p>${m.hint}</p></details></div>
   </section>
@@ -803,6 +917,7 @@ function viewLevel(i){const G=GAMES[CG];if(!gameUnlocked(CG)||!unlocked(i)){go('
    <div class="lvnav">${i>0?`<button type="button" class="btn ghost" data-nav="${i-1}">← Missió ${mNum(G,i-1)}</button>`:''}<button type="button" class="btn ghost" data-nav="game">Missions</button>${!last&&unlocked(i+1)?`<button type="button" class="btn ghost" data-nav="${i+1}">Missió ${mNum(G,i+1)} →</button>`:''}</div>
    ${hasProg(i)?`<div class="adult"><span class="lab2">Per a adults</span><button type="button" class="btn ghost small rstm">Esborra aquesta missió</button>
     <div class="confirm" hidden><p>S'esborrarà tot el que s'ha fet en aquesta missió: el codi construït, el «Pensa», els passos marcats i el repte expert.${!last?` La missió següent es tornarà a bloquejar (si encara no s'havia fet).`:''}</p>
+    <div class="pwrow"><label for="pwr">Contrasenya d'adults:</label><input type="password" id="pwr" autocomplete="off"></div><p class="fb pwfb" aria-live="polite"></p>
     <div class="pbtns"><button type="button" class="btn danger small rsty">Sí, esborra-la</button><button type="button" class="btn ghost small rstn">No, deixa-ho</button></div></div></div>`:''}
   </section>
  </main>`;
@@ -815,13 +930,14 @@ function viewLevel(i){const G=GAMES[CG];if(!gameUnlocked(CG)||!unlocked(i)){go('
    app.querySelector('.locked').hidden=true;app.querySelector('.scratchsteps').hidden=false;refreshFinish(i)});
  }
  if(m.puzzle)mountPuzzle(app.querySelector('.puz'),i);
+ const scBox=app.querySelector('.scripts');if(scBox)scBox.addEventListener('click',e=>{if(!e.target.closest('.dbgopen'))return;try{if(sim&&sim.stop)sim.stop()}catch(_){}openDebugger(CG,i)});
  app.querySelector('.back').onclick=()=>go('game',CG);
  app.querySelectorAll('[data-nav]').forEach(b=>b.onclick=()=>b.dataset.nav==='game'?go('game',CG):go('lvl',CG,+b.dataset.nav));
  app.querySelectorAll('.steps input').forEach((c,j)=>c.onchange=()=>{(p.steps[i]=p.steps[i]||[])[j]=c.checked;c.closest('li').classList.toggle('checked',c.checked);save()});
  app.querySelector('#xc').onchange=e=>{p.extra=p.extra.filter(x=>x!==i);if(e.target.checked)p.extra.push(i);save()};
  const rb=app.querySelector('.rstm');if(rb){const cf=app.querySelector('.confirm');rb.onclick=()=>{cf.hidden=false;rb.hidden=true;app.querySelector('.rstn').focus()};
   app.querySelector('.rstn').onclick=()=>{cf.hidden=true;rb.hidden=false};
-  app.querySelector('.rsty').onclick=()=>{resetMission(i);go('lvl',CG,i)}}
+  app.querySelector('.rsty').onclick=()=>{const pw=app.querySelector('#pwr');if(!pwOK(pw.value)){const f=app.querySelector('.pwfb');f.className='fb pwfb no';f.textContent='Contrasenya incorrecta.';pw.value='';pw.focus();return}resetMission(i);go('lvl',CG,i)}}
  app.querySelector('.finish .btn.go').onclick=()=>{const first=!p.done.includes(i);if(first){p.done.push(i);save();celebrate(i)}else if(!last)go('lvl',CG,i+1);else go('game',CG)}}
 
 function celebrate(i){const G=GAMES[CG],m=G.M[i];confetti();SFX.win();const last=gameDone(CG);
@@ -837,6 +953,389 @@ function confetti(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)re
  const cols=['#FFBF00','#4C97FF','#9966FF','#59C059','#FF8C1A','#CF63CF','#5CB1D6'];
  const ps=Array.from({length:150},()=>({x:innerWidth/2+(Math.random()-.5)*80,y:innerHeight*.35,vx:(Math.random()-.5)*15,vy:-Math.random()*13-3,r:Math.random()*7+5,c:cols[Math.random()*cols.length|0],a:Math.random()*6}));
  let t=0;(function f(){t++;c.clearRect(0,0,cv.width,cv.height);ps.forEach(q=>{q.vy+=.35;q.vx*=.99;q.x+=q.vx;q.y+=q.vy;q.a+=.2;c.save();c.translate(q.x,q.y);c.rotate(q.a);c.fillStyle=q.c;c.fillRect(-q.r/2,-q.r/4,q.r,q.r/2);c.restore()});if(t<150)requestAnimationFrame(f);else cv.remove()})()}
+
+const pwOK=v=>{try{const h=btoa(String(v||'').trim().toLowerCase());return h==='cGV0YXJkdXM='||h==='cGV0YXJkb3M='}catch(e){return false}};
+
+/* ===================== ALGORISME: la idea del programa, explicada amb paraules (sense dir els blocs) ===================== */
+const PAIRS={'{':'}','[':']','«':'»','‹':'›'};
+function parseArgs(s){let sig='',i=0;const args=[];s=String(s||'');while(i<s.length){const ch=s[i];if(PAIRS[ch]){const j=closeIx(s,i,ch,PAIRS[ch]);args.push({k:ch,v:s.slice(i+1,j)});sig+='#';i=j+1}else{sig+=ch;i++}}return{sig:sig.replace(/\s+/g,' ').trim(),args}}
+function splitCat(v){const m=v.match(/^([a-z]{2}):/);return m?{cat:m[1],body:v.slice(3)}:{cat:'',body:v}}
+const numOf=a=>a&&a.k==='{'?parseFloat(a.v):NaN;
+const isRnd=a=>a&&a.k==='‹'&&/atzar/.test(a.v);
+function vname(n){const m={punts:'els punts',vides:'les vides',temps:'el temps',velocitat:'la velocitat',rapidesa:'la rapidesa',encerts:'els encerts',rondes:'les rondes','rècord':'el rècord',pas:'el pas','punts esquerra':"els punts de l'esquerra",'punts dreta':'els punts de la dreta'};return m[n]||`«${n}»`}
+function amount(n){n=Math.abs(n);return n<=5?'una mica':(n<=10?'un pas':(n<=50?'bastant':'un bon tros'))}
+function posDesc(xa,ya){const x=numOf(xa),y=numOf(ya);
+ const h=isRnd(xa)?"en un lloc sorpresa d'esquerra a dreta":(isNaN(x)?'':(x<=-150?"a l'esquerra":(x>=150?'a la dreta':'al mig')));
+ const v=isRnd(ya)?'a una altura sorpresa':(isNaN(y)?'':(y>=150?'a dalt de tot':(y<=-150?'a baix de tot':(y>=60?'a dalt':(y<=-60?'a baix':'a mitja altura')))));
+ if(h==='al mig'&&v==='a mitja altura')return 'al centre de l\'escenari';
+ if(v==='a baix de tot'&&h==="a l'esquerra")return "al racó de baix a l'esquerra";
+ return [v,h].filter(Boolean).join(', ')}
+function condTxt(v){const{body}=splitCat(v);if(!body.trim())return 'passa alguna cosa';const{sig,args}=parseArgs(body);const A=args.map(a=>a.v);
+ switch(sig){
+  case 'tocant #?':return A[0]==='punter del ratolí'?'toques el ratolí':`toques ${A[0]==='vora'?'la vora':'«'+A[0]+'»'}`;
+  case 'tocant el color #?':return `toques una cosa de color ${A[0]}`;
+  case 'tecla # premuda?':return `estàs prement la tecla «${A[0]}»`;
+  case '# o #':return `${condTxt(args[0].v)}, o bé ${condTxt(args[1].v)}`;
+  case '# i #':return `${condTxt(args[0].v)} i, a més, ${condTxt(args[1].v)}`}
+ const L=args[0],Rr=args[1],ln=L?repTxt(L.k==='‹'?L.v:L.v):'',rv=Rr?(Rr.k==='{'?Rr.v.trim():repTxt(Rr.v)):'';
+ const lv=L&&L.k==='‹'?L.v:'';
+ if(/^se:posició y de/.test(lv)&&sig==='# > #')return `la pilota és més amunt que tu`;
+ if(/^se:posició y de/.test(lv)&&sig==='# < #')return `la pilota és més avall que tu`;
+ if(sig==='# < #'&&/^mo:posició y/.test(lv))return 'has arribat massa avall';
+ if(sig==='# < #'&&/^mo:posició x/.test(lv))return "has arribat a l'esquerra de tot";
+ if(sig==='# > #'&&/^mo:posició x/.test(lv))return 'has arribat a la dreta de tot';
+ if(sig==='# = #'&&/resposta/.test(lv)&&Rr.k==='{')return `la resposta és «${rv}»`;
+ if(sig==='# = #'&&/li:resposta/.test(lv))return 'la teva llista és igual que la del Simó';
+ if(sig==='# = #'&&/llargada/.test(lv))return 'has clicat tants colors com té la seqüència';
+ if(sig==='# = #')return `${ln} arriben a ${rv}`.replace(/^(el|la) (.*) arriben/,'$1 $2 arriba');
+ if(sig==='# > #')return `${ln} superen ${rv}`;
+ return 'passa alguna cosa'}
+function repTxt(v){const{cat,body}=splitCat(v);const{sig,args}=parseArgs(body);
+ if(cat==='va')return vname(body);
+ if(cat==='li'){if(sig==='llargada de #')return `els colors de la llista «${args[0].v}»`;if(sig==='element # de #')return `el color que toca de la llista`;return `la llista «${body}»`}
+ switch(sig){case 'posició x':case 'posició y':return 'la teva posició';case 'direcció':return 'la teva direcció';case 'resposta':return 'la resposta';case 'cronòmetre':return 'el temps del cronòmetre';
+  case "nombre a l'atzar entre # i #":return 'un número sorpresa';case 'arrodoneix #':return 'els segons que has trigat';
+  case 'uneix # i #':{const a=args[0].k==='{'?`«${args[0].v.trim()}»`:repTxt(args[0].v);const b=args[1].k==='{'?`«${args[1].v.trim()}»`:repTxt(args[1].v);return `${a} i ${b}`}}
+ return 'un valor'}
+function stmtTxt(b,top){const{sig,args}=parseArgs(b.t);const A=args.map(a=>a.v);const n=numOf(args[0]);
+ if(b.c==='my'&&!b.hat)return `Fes servir el teu bloc «${b.t}».`;
+ switch(sig){
+  case 'quan la ⚑ es cliqui':return 'Quan comença el joc:';
+  case 'quan la tecla # es premi':return `Cada vegada que algú prem «${A[0]}»:`;
+  case 'quan es cliqui aquest personatge':return 'Quan algú et clica:';
+  case 'quan rebi #':return `Quan t'arriba l'avís «${A[0]}»:`;
+  case "quan l'escenari canviï al fons #":return `Quan apareix el fons «${A[0]}»:`;
+  case 'quan una còpia meva comenci':return 'Cada còpia nova, quan neix:';
+  case 'defineix #':return `La recepta del teu bloc «${A[0]}»:`;
+  case 'mou-te # passos':return isNaN(n)?'Avança tant com diu la rapidesa.':`Avança ${amount(n)}.`;
+  case 'gira ↻ # graus':return n<=10?'Gira una miqueta.':(n===90?'Gira un quart de volta.':(n===120?'Gira per fer la punta del triangle.':(n>=150?'Gira gairebé mitja volta.':'Gira.')));
+  case 'ves a x: # y: #':return `Col·loca't ${posDesc(args[0],args[1])}.`;
+  case 'ves a #':return A[0]==='posició aleatòria'?"Salta a un lloc sorpresa.":'Ves allà on és el ratolí.';
+  case 'llisca en # segons fins a x: # y: #':return `Llisca a poc a poc i queda't ${posDesc(args[1],args[2])}.`;
+  case 'suma # a x':return isNaN(n)?'Mou-te de costat tant com diu la rapidesa.':`Mou-te ${amount(n)} cap a ${n>=0?'la dreta':"l'esquerra"}.`;
+  case 'suma # a y':return isNaN(n)?'Puja o baixa segons la velocitat.':(n>=0?`Puja ${amount(n)}.`:`Baixa ${amount(n)}.`);
+  case 'assigna el valor # a x':return n>=150?'Torna a la dreta de tot.':(n<=-150?"Torna a l'esquerra de tot.":'Torna al mig.');
+  case 'assigna el valor # a y':return 'Queda\'t just a terra.';
+  case 'apunta en direcció #':{if(isNaN(n))return "Gira't cap a l'altre costat, com en un mirall.";return {0:'Mira amunt.',90:'Mira cap a la dreta.',180:'Mira avall.','-90':"Mira cap a l'esquerra.",45:'Mira en diagonal, cap amunt i a la dreta.'}[n]||'Mira cap a una direcció.'}
+  case 'apunta cap a #':return A[0]==='punter del ratolí'?'Mira cap al ratolí.':`Mira cap a «${A[0]}».`;
+  case 'rebota en tocar una vora':return 'Si arribes a la vora, rebota.';
+  case 'fixa el tipus de rotació #':return 'Que no et posis mai cap per avall quan et giris.';
+  case 'digues # durant # segons':case 'digues #':return args[0].k==='{'?`Digues «${A[0].trim()}»${sig.includes('durant')?' una estona':''}.`:`Digues ${repTxt(A[0])}${sig.includes('durant')?' una estona':''}.`;
+  case "amaga't":return 'Desapareix.';
+  case "mostra't":return 'Torna a aparèixer.';
+  case 'següent vestit':return 'Canvia de dibuix.';
+  case 'canvia el vestit a #':return {content:'Posa cara contenta.',trist:'Posa cara trista.',normal:'Posa la cara normal.'}[A[0]]||`Canvia al dibuix «${A[0]}».`;
+  case "augmenta l'efecte # en #":return 'Canvia una mica de color.';
+  case "fixa l'efecte # a #":return A[0]==='brillantor'?(numOf(args[1])>0?"Il·lumina't.":'Torna al color normal.'):'Tria un color sorpresa.';
+  case 'fixa la mida a # %':return 'Tria una mida sorpresa.';
+  case 'canvia el fons a #':return `Posa el fons del primer nivell.`;
+  case 'següent fons de pantalla':return 'Passa al fons següent.';
+  case 'inicia el so #':case 'toca el so # fins que acabi':return 'Fes un so.';
+  case 'toca la nota # durant # pulsacions':return 'Fes sonar la teva nota.';
+  case 'espera # segons':return isNaN(n)?'Espera un temps sorpresa.':(n<1?'Espera un instant.':(n===1?'Espera un segon.':'Espera una estona.'));
+  case 'per sempre':return 'Tota l\'estona, sense parar:';
+  case 'repeteix #':return isNaN(n)?'Repeteix-ho per a cada color de la llista:':`Fes això ${n} vegades:`;
+  case 'repeteix fins #':return `Una vegada i una altra, fins que ${condTxt(A[0])}:`;
+  case 'espera fins #':return `Espera fins que ${condTxt(A[0])}.`;
+  case 'si # llavors':return `Si ${condTxt(A[0])}:`;
+  case 'atura #':return A[0]==='tot'?"S'acaba el joc.":'Para tot el que estaves fent.';
+  case 'crea una còpia de #':return 'Fes una còpia de tu mateix.';
+  case 'esborra aquesta còpia':return 'Aquesta còpia desapareix per sempre.';
+  case 'envia a tots #':return `Avisa tothom: «${A[0]}».`;
+  case 'envia a tots # i espera':return 'Avisa el botó del color que toca perquè s\'encengui, i espera.';
+  case 'assigna a # el valor #':{const V=vname(A[0]);if(args[1].k!=='{')return `${V.charAt(0).toUpperCase()+V.slice(1)} passa a ser el nombre de ${repTxt(A[1]).replace(/^(els|les|el|la) /,'')}.`;return top?`Al principi, ${V} valen ${A[1]}.`.replace(/^Al principi, (el|la) (\S+) valen/,'Al principi, $1 $2 val'):`${V.charAt(0).toUpperCase()+V.slice(1)} passen a valer ${A[1]}.`.replace(/^(El|La) (\S+) passen/,'$1 $2 passa')}
+  case 'augmenta # del llapis en #':return 'Canvia una mica el color del llapis.';
+  case 'augmenta # en #':{const V=vname(A[0]),m=numOf(args[1]);const k=Math.abs(m)===1||isNaN(m)?'':' '+Math.abs(m);return m>=0?`${V.charAt(0).toUpperCase()+V.slice(1)} pugen${k}.`.replace(/^(El|La) (\S+) pugen/,'$1 $2 puja'):`${V.charAt(0).toUpperCase()+V.slice(1)} baixen${k}.`.replace(/^(El|La) (\S+) baixen/,'$1 $2 baixa')}
+  case 'pregunta # i espera':return `Pregunta «${A[0].trim()}» i espera que et responguin.`;
+  case 'reinicia el cronòmetre':return 'Posa el cronòmetre en marxa des de zero.';
+  case 'esborra-ho tot':return 'Neteja la pissarra.';
+  case 'baixa el llapis':return 'Posa el llapis sobre el paper.';
+  case 'puja el llapis':return 'Aixeca el llapis del paper.';
+  case 'fixa la mida del llapis a #':return 'Tria un llapis una mica gruixut.';
+  case 'esborra-ho tot de #':return `Buida la llista «${A[0]}».`;
+  case 'afegeix # a #':return args[0].k==='{'?`Apunta a la llista «${A[1]}» el color que has clicat.`:`Afegeix un color sorpresa a la llista «${A[1]}».`}
+ return 'Fes el pas que toca.'}
+function algoList(blocks,mark,top,isG){isG=isG||(b=>!!b.g);const flag=top&&blocks[0]&&/^quan la ⚑/.test(blocks[0].t);return `<ol>${blocks.map((b,j)=>{const an=mark&&!isG(b)?' class="an"':'';let h=`<li${an}><span>${stmtTxt(b,flag&&j>0&&j<4)}</span>`;
+  if(b.body){h+=b.body.length?algoList(b.body,mark,false,isG):'';if(b.t2)h+=`</li><li${an}><span>Si no:</span>${(b.body2||[]).length?algoList(b.body2,mark,false,isG):''}`}return h+'</li>'}).join('')}</ol>`}
+function algoHTML(m,hasGiven,isG){if(!m.scripts)return '';
+ const body=m.scripts.map(sc=>`<h4>${sc.spr==='Escenari'?"L'escenari":`El personatge «${sc.spr}»`}</h4>${algoList(sc.b,hasGiven,true,isG)}`).join('');
+ return `<details class="algo"><summary>Explica'm la idea del programa</summary><div class="algobody">
+  <p class="alegend">Aquí no hi ha els blocs: hi ha <b>la idea</b> del programa, explicada amb paraules. Llegeix cada frase i pensa quin bloc fa aquella feina.${hasGiven?' Les frases <span class="mk">marcades</span> són les peces que has de col·locar.':''}</p>
+  <div class="sayrow"><div class="tx">${body}</div>${sayBtn()}</div></div></details>`}
+
+/* ===================== DEPURADOR: executa el codi pas a pas (intèrpret de blocs) ===================== */
+const DKEY={'espai':' ','fletxa dreta':'ArrowRight','fletxa esquerra':'ArrowLeft','fletxa amunt':'ArrowUp','fletxa avall':'ArrowDown'};
+const dKeyOf=n=>DKEY[n]||String(n).toLowerCase();
+const DKLAB={' ':'Espai','ArrowRight':'→','ArrowLeft':'←','ArrowUp':'↑','ArrowDown':'↓'};
+const SIMPOS=(i)=>{const[rx,ry]=SRECT[i];return[rx+75-240,180-(ry+58)]};
+const DLOOK={
+ Nau:{x:0,y:-150,hw:20,hh:30,d:(c,s,X,Y)=>drawRocket(c,X,Y,false)},
+ Estrella:{x:100,y:80,hw:18,hh:18,d:(c,s,X,Y)=>drawStar(c,X,Y,s.dir-90,19)},
+ Meteorit:{x:0,y:180,hw:22,hh:22,d:(c,s,X,Y)=>drawMeteor(c,X,Y,s.dir)},
+ Papallona:{x:0,y:0,hw:22,hh:18,d:(c,s,X,Y)=>drawButterfly(c,X,Y,s.dir,s.cos%2)},
+ Flor:{x:120,y:60,hw:18,hh:18,d:(c,s,X,Y)=>drawFlower(c,X,Y)},
+ Vespa:{x:-150,y:100,hw:18,hh:14,d:(c,s,X,Y)=>drawWasp(c,X,Y,s.dir)},
+ Llapis:{x:0,y:0,hw:8,hh:8,d:(c,s,X,Y)=>drawPencil(c,X,Y,s.dir)},
+ Robot:{x:-110,y:-20,hw:60,hh:80,cos:['normal','content','trist'],d:(c,s,X,Y)=>drawRobot(c,X,Y,{content:'happy',trist:'sad'}[s.cosList[s.cos]]||'')},
+ Talp:{x:0,y:0,hw:26,hh:26,d:(c,s,X,Y)=>drawMole(c,X,Y,false)},
+ 'Talp daurat':{x:100,y:-50,hw:26,hh:26,d:(c,s,X,Y)=>drawMole(c,X,Y,true)},
+ 'Botó':{x:0,y:0,hw:70,hh:28,d:(c,s,X,Y)=>{c.fillStyle='#3DB86B';rr(c,X-70,Y-28,140,56,14);c.fill();c.fillStyle='#fff';c.font='26px '+DF;c.textAlign='center';c.textBaseline='middle';c.fillText('JUGA',X,Y+2);c.textAlign='left';c.textBaseline='alphabetic'}},
+ Granota:{x:-150,y:-100,hw:22,hh:20,d:(c,s,X,Y)=>drawFrog(c,X,Y,s.y>-99)},
+ Tronc:{x:240,y:-105,hw:28,hh:15,d:(c,s,X,Y)=>drawLog(c,X,Y,s.dir)},
+ Peix:{x:-200,y:0,hw:30,hh:16,d:(c,s,X,Y)=>drawFish(c,X,Y,Math.sin(s.dir*Math.PI/180)<0?-1:1,(200+s.fx.color*1.8)%360,s.size/100)},
+ Ham:{x:0,y:0,hw:8,hh:12,d:(c,s,X,Y)=>drawHook(c,X,Y)},
+ 'Tauró':{x:0,y:-40,hw:50,hh:22,d:(c,s,X,Y)=>drawShark(c,X,Y,Math.sin(s.dir*Math.PI/180)<0?-1:1)},
+ Explorador:{x:-200,y:-150,hw:12,hh:12,d:(c,s,X,Y)=>{c.fillStyle='#FF8C1A';c.strokeStyle='#B35900';c.lineWidth=2;c.beginPath();c.arc(X,Y,12,0,7);c.fill();c.stroke()}},
+ Meta:{x:195,y:140,hw:15,hh:15,d:(c,s,X,Y)=>drawStar(c,X,Y,0,15)},
+ Fantasma:{x:40,y:0,hw:16,hh:18,d:(c,s,X,Y)=>drawGhost(c,X,Y)},
+ Pilota:{x:0,y:0,hw:10,hh:10,d:(c,s,X,Y)=>{c.fillStyle='#fff';c.strokeStyle='#C7CCD9';c.lineWidth=2;c.beginPath();c.arc(X,Y,10,0,7);c.fill();c.stroke()}},
+ 'Pala E':{x:-215,y:0,hw:6,hh:35,d:(c,s,X,Y)=>{c.fillStyle='#59C059';rr(c,X-6,Y-35,12,70,6);c.fill()}},
+ 'Pala D':{x:215,y:0,hw:6,hh:35,d:(c,s,X,Y)=>{c.fillStyle='#B48CFF';rr(c,X-6,Y-35,12,70,6);c.fill()}},
+ 'Simó':{x:-65,y:-20,hw:34,hh:34,d:(c,s,X,Y)=>{c.fillStyle='#26304F';c.strokeStyle='#5B6280';c.lineWidth=3;c.beginPath();c.arc(X,Y,34,0,7);c.fill();c.stroke();c.fillStyle='#fff';c.font='700 13px '+CF;c.textAlign='center';c.textBaseline='middle';c.fillText('Simó',X,Y);c.textAlign='left';c.textBaseline='alphabetic'}}};
+['Vermell','Blau','Verd','Groc'].forEach((n,i)=>{DLOOK[n]={get x(){return SIMPOS(i)[0]},get y(){return SIMPOS(i)[1]},hw:75,hh:58,d:(c,s,X,Y)=>{c.save();const on=s.fx.brillantor>0;c.fillStyle=SCOL[i];c.globalAlpha=on?1:.55;if(on){c.shadowColor=SCOL[i];c.shadowBlur=26}rr(c,X-75,Y-58,150,116,18);c.fill();c.restore();c.fillStyle='rgba(255,255,255,.85)';c.font='700 15px '+CF;c.fillText(String(i+1),X-63,Y-36)}}});
+const DCOLS=['#E5484D','#4C97FF','#3DB86B','#FF8C1A','#9966FF','#CF63CF'];
+const dGeneric=n=>({x:0,y:0,hw:20,hh:20,d:(c,s,X,Y)=>{c.fillStyle=DCOLS[[...n].reduce((a,ch)=>a+ch.charCodeAt(0),0)%DCOLS.length];c.beginPath();c.arc(X,Y,20,0,7);c.fill();c.fillStyle='#fff';c.font='700 16px '+CF;c.textAlign='center';c.textBaseline='middle';c.fillText(n[0],X,Y);c.textAlign='left';c.textBaseline='alphabetic'}});
+const DBD={laberint:['Nivell 1','Nivell 2','Nivell 3','Final']};
+const DBG_BG={
+ nau:c=>spaceBg(c),papallona:c=>meadowBg(c),
+ pissarra:c=>{c.fillStyle='#fff';c.fillRect(0,0,W,H);c.strokeStyle='#E6ECF6';c.lineWidth=1;c.beginPath();for(let x=20;x<W;x+=20){c.moveTo(x,0);c.lineTo(x,H)}for(let y=20;y<H;y+=20){c.moveTo(0,y);c.lineTo(W,y)}c.stroke()},
+ robot:c=>{const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,'#3B2A6E');g.addColorStop(1,'#1D1A3F');c.fillStyle=g;c.fillRect(0,0,W,H)},
+ talps:c=>{c.fillStyle='#86CF72';c.fillRect(0,0,W,H);c.fillStyle='#7BC566';for(let y=0;y<H;y+=40)c.fillRect(0,y,W,20)},
+ granota:c=>{const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,'#8FD3FF');g.addColorStop(.7,'#DDF3FF');c.fillStyle=g;c.fillRect(0,0,W,H);c.fillStyle='#6CC04A';c.fillRect(0,302,W,H-302)},
+ pesca:c=>{const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,'#5CC8F0');g.addColorStop(1,'#0E5A8A');c.fillStyle=g;c.fillRect(0,0,W,H)},
+ laberint:(c,R)=>{c.fillStyle='#FFF4D6';c.fillRect(0,0,W,H);if(R.bd>=3){c.fillStyle='#FFD23F';c.font='44px '+DF;c.textAlign='center';c.fillText('FINAL',240,190);c.textAlign='left';return}
+  c.fillStyle='#4C97FF';MZB.concat(MAZES[R.bd]).forEach(([x1,y1,x2,y2])=>{const[a,b]=P(x1,y2);c.fillRect(a,b,x2-x1,y2-y1)});c.fillStyle='#fff';c.font='700 14px '+CF;c.textAlign='right';c.fillText(DBD.laberint[R.bd],224,26);c.textAlign='left'},
+ pong:c=>{c.fillStyle='#173A5E';c.fillRect(0,0,W,H);c.strokeStyle='rgba(255,255,255,.35)';c.lineWidth=3;c.setLineDash([10,10]);c.beginPath();c.moveTo(240,0);c.lineTo(240,H);c.stroke();c.setLineDash([]);c.fillStyle='#E5484D';c.fillRect(0,0,8,H);c.fillStyle='#4C97FF';c.fillRect(W-8,0,8,H)},
+ simo:c=>{c.fillStyle='#1E2340';c.fillRect(0,0,W,H)}};
+const DBG_COL={laberint:(n,s,R)=>n==='blau'&&R.bd<3&&hitWall(R.bd+1,s.x,s.y,12),
+ pong:(n,s)=>n==='vermell'?s.x-s.hw<=-232:(n==='blau'?s.x+s.hw>=232:false)};
+
+/* el projecte sencer fins a aquesta missió: els programes nous substitueixen els antics (mateix personatge i mateix barret) */
+const dShapes=bs=>{const o=new Set();const w=b=>{o.add(shapeOf(b.t));(b.body||[]).forEach(w);(b.body2||[]).forEach(w)};bs.slice(1).forEach(w);return o};
+function dbgProject(gi,i){const G=GAMES[gi];let L=[];
+ for(let j=0;j<=i;j++){const M=G.M[j];const drop=/(Treu|Esborra) el programa antic/.test(M.scriptnote||'');
+  (M.scripts||[]).forEach(sc=>{const it={spr:sc.spr,b:sc.b,from:j,tag:sc.tag};
+   let cands=L.filter(x=>x.spr===sc.spr&&x.b[0].t===sc.b[0].t&&x.from<j);
+   if(drop&&sc.tag==='Programa nou'){L=L.filter(x=>!cands.includes(x));cands=[]}
+   if(!cands.length||sc.tag==='Programa nou'){L.push(it);return}
+   const S=dShapes(sc.b);let best=cands[0],bv=-1;cands.forEach(x=>{const X=dShapes(x.b);let n=0;S.forEach(k=>{if(X.has(k))n++});const v=n/Math.max(1,new Set([...S,...X]).size);if(v>bv){bv=v;best=x}});
+   L[L.indexOf(best)]=it})}
+ if(G.id==='talps'&&i>=5){L=L.filter(s=>!(s.spr==='Talp'&&s.b[0].t==='quan la ⚑ es cliqui'));
+  L=L.map(s=>(s.spr==='Talp daurat'||s.spr==='Escenari')&&s.b[0].t==='quan la ⚑ es cliqui'?Object.assign({},s,{b:[{c:'ev',t:'quan rebi [comença]',hat:1}].concat(s.b.slice(1))}):s)}
+ if(G.id==='simo'){const ex=[];L.filter(s=>s.spr==='Vermell').forEach(s=>[['Blau',2,64],['Verd',3,67],['Groc',4,72]].forEach(([n,k,nt])=>{
+   const rep=b=>Object.assign({},b,{t:b.t.replace('quan rebi [1]',`quan rebi [${k}]`).replace('afegeix {1} a',`afegeix {${k}} a`).replace('toca la nota {60}',`toca la nota {${nt}}`),body:b.body&&b.body.map(rep),body2:b.body2&&b.body2.map(rep)});
+   ex.push({spr:n,b:s.b.map(rep),from:s.from,auto:1})}));L=L.concat(ex)}
+ let n=0;const cl=b=>{const o=Object.assign({},b,{dbi:n++});delete o.k;delete o.g;delete o.nw;delete o.id;if(b.body)o.body=b.body.map(cl);if(b.body2)o.body2=b.body2.map(cl);return o};
+ return L.map(s=>Object.assign({},s,{b:s.b.map(cl)}))}
+
+const DPC=new Map();const dParse=t=>{let r=DPC.get(t);if(!r){r=parseArgs(t);DPC.set(t,r)}return r};
+const dNum=v=>{if(typeof v==='number')return v;if(typeof v==='boolean')return v?1:0;const n=Number(String(v).trim());return String(v).trim()===''||isNaN(n)?0:n};
+const dIsNum=v=>typeof v==='number'||(String(v).trim()!==''&&!isNaN(Number(v)));
+const dStr=v=>typeof v==='number'?String(Math.round(v*1e6)/1e6):String(v);
+const dNorm=d=>{d=((d+180)%360+360)%360-180;return d===-180?180:d};
+
+function openDebugger(gi,i){
+ const G=GAMES[gi],proj=dbgProject(gi,i);
+ const look=n=>DLOOK[n]||dGeneric(n);
+ const names=[];const addN=n=>{if(n&&n!=='Escenari'&&n!=='vora'&&n!=='punter del ratolí'&&n!=='jo mateix'&&!names.includes(n))names.push(n)};
+ const keys=new Set(),vars=new Set(),lists=new Set();
+ const scan=b=>{const t=b.t||'';for(const q of t.matchAll(/tocant \[([^\]]+)\]|posició [xy] de \[([^\]]+)\]/g))addN(q[1]||q[2]);
+  for(const q of t.matchAll(/tecla \[([^\]]+)\]/g))keys.add(dKeyOf(q[1]));
+  for(const q of t.matchAll(/‹va:([^‹›]+)›/g))vars.add(q[1]);const v=b.c==='va'&&t.match(/^(assigna a|augmenta) \[([^\]]+)\]/);if(v)vars.add(v[2]);
+  if(b.c==='li')for(const q of t.matchAll(/\[([^\]]+)\]/g))lists.add(q[1]);
+  (b.body||[]).forEach(scan);(b.body2||[]).forEach(scan)};
+ proj.forEach(s=>{addN(s.spr);s.b.forEach(scan)});
+ const BD=DBD[G.id]||['fons1'];
+ /* ---------- interfície ---------- */
+ document.querySelectorAll('.gmodal').forEach(m=>m.remove());
+ const md=document.createElement('div');md.className='modal gmodal dbgmodal';
+ const sprOrder=[];proj.filter(s=>s.from===i&&!s.auto).concat(proj).forEach(s=>{if(!sprOrder.includes(s.spr))sprOrder.push(s.spr)});
+ const codeH=sprOrder.map(n=>proj.filter(s=>s.spr===n).map(s=>`<div class="spr"><div class="sprname">${ICON(n)}${n}${s.from===i&&!s.auto?'<em>Aquesta missió</em>':(s.auto?'<em>Com el Vermell</em>':'')}</div>${stack(s.b)}</div>`).join('')).join('');
+ md.innerHTML=`<div class="dlg gdlg dbgdlg" role="dialog" aria-modal="true" aria-labelledby="dbgh"><button type="button" class="gclose" aria-label="Tanca">✕</button>
+  <p class="eyebrow2">Depurador</p><h2 id="dbgh">Executa el codi pas a pas</h2>
+  <div class="sayrow"><p class="tx dbghelp">Clica <b>Comença</b>. El bloc que brilla és el que l'ordinador farà ara. Cada vegada que cliques <b>Un pas</b>, fa aquell bloc i veus què passa a l'escenari. Aquí hi ha tot el teu projecte fins a aquesta missió.</p>${sayBtn()}</div>
+  <div class="dbggrid"><div class="dbgleft">
+   <canvas class="dbgcv" width="480" height="360" aria-label="Escenari del depurador"></canvas>
+   <div class="dbgbar"><button type="button" class="btn go dgo">⚑ Comença</button><button type="button" class="btn dstep" disabled>Un pas ▸</button><button type="button" class="btn ghost dslow" disabled>A poc a poc</button><button type="button" class="btn ghost drun" disabled>Velocitat normal</button><button type="button" class="btn ghost dstop" disabled>■ Atura</button></div>
+   <div class="dbgstat" aria-live="polite"><p>Clica <b>⚑ Comença</b> per començar.</p></div>
+   <div class="askrow" hidden><label for="dbgask"></label><input id="dbgask" autocomplete="off"><button type="button" class="askok" aria-label="Respon">✓</button></div>
+   ${keys.size?`<div class="dbgkeys"><span class="lab2">Tecles (clica per mantenir-la premuda):</span>${[...keys].map(k=>`<button type="button" class="dkey" data-key="${esc(k)}" aria-pressed="false">${DKLAB[k]||k.toUpperCase()}</button>`).join('')}</div>`:''}
+   <p class="simnote">Pots arrossegar els personatges amb el ratolí i clicar-los.</p>
+  </div><div class="scripts dbgcode" aria-label="Codi del projecte">${codeH}</div></div></div>`;
+ document.body.appendChild(md);
+ const $=s=>md.querySelector(s);const cv=$('.dbgcv'),ctx=cv.getContext('2d'),stat=$('.dbgstat'),code=$('.dbgcode'),ask=$('.askrow');
+ const bEl=new Map();code.querySelectorAll('[data-bi]').forEach(e=>bEl.set(+e.dataset.bi,e));
+ /* ---------- estat ---------- */
+ const R={clock:0,t0:0,vars:{},lists:{},bd:0,sprites:[],threads:[],queue:[],held:new Set(),mouse:{x:0,y:0},mode:'step',stepReq:0,running:false,paused:false,pausedAt:0,ask:null,answer:'',pc:null,flash:new Map(),seek:0,last:null,ended:false};
+ const pcv=document.createElement('canvas');pcv.width=W;pcv.height=H;const pctx=pcv.getContext('2d');
+ const mkSpr=n=>{const L=look(n);return{name:n,x:L.x,y:L.y,dir:90,rot:'tot',cos:0,cosList:L.cos||['vestit1','vestit2'],size:100,fx:{color:0,brillantor:0},vis:true,say:'',pen:{down:false,hue:66,size:1},clone:false,dead:false,get hw(){return L.hw*this.size/100},get hh(){return L.hh*this.size/100},L}};
+ const stage={name:'Escenari',stage:true,fx:{},say:''};
+ function reset(){R.threads.forEach(t=>t.done=true);Object.assign(R,{clock:0,t0:0,vars:{},lists:{},bd:0,threads:[],queue:[],paused:false,ask:null,answer:'',flash:new Map(),seek:0,last:null,ended:false,stopAll:false});
+  vars.forEach(v=>R.vars[v]=0);lists.forEach(l=>R.lists[l]=[]);R.sprites=names.map(mkSpr);pctx.clearRect(0,0,W,H);ask.hidden=true}
+ const orig=n=>n==='Escenari'?stage:R.sprites.find(s=>s.name===n&&!s.clone);
+ /* ---------- avaluació ---------- */
+ const box=s=>[s.x-s.hw,s.y-s.hh,s.x+s.hw,s.y+s.hh];
+ const overlap=(a,b)=>{const[A1,A2,A3,A4]=box(a),[B1,B2,B3,B4]=box(b);return A1<B3&&B1<A3&&A2<B4&&B2<A4};
+ function touching(s,n){if(s.stage||!s.vis)return false;if(n==='vora')return s.x-s.hw<=-240||s.x+s.hw>=240||s.y-s.hh<=-180||s.y+s.hh>=180;
+  if(n==='punter del ratolí'){const[a,b,c2,d]=box(s);return R.mouse.x>=a&&R.mouse.x<=c2&&R.mouse.y>=b&&R.mouse.y<=d}
+  return R.sprites.some(o=>o!==s&&o.name===n&&o.vis&&!o.dead&&overlap(s,o))}
+ const listVal=l=>{const a=R.lists[l]||[];return a.every(x=>String(x).length===1)?a.join(''):a.join(' ')};
+ function arg(a,s){if(!a)return '';if(a.k==='{'||a.k==='[')return a.v;return rep(a.v,s)}
+ function rep(v,s){const m=v.match(/^([a-z]{2}):/);const c=m?m[1]:'',body=m?v.slice(3):v;const{sig,args}=dParse(body);const A=k=>arg(args[k],s);
+  switch(c+':'+sig){
+   case "op:nombre a l'atzar entre # i #":{const a=dNum(A(0)),b=dNum(A(1));const lo=Math.min(a,b),hi=Math.max(a,b);return /\./.test(A(0)+A(1))?lo+Math.random()*(hi-lo):Math.floor(Math.random()*(hi-lo+1))+lo}
+   case 'op:# + #':return dNum(A(0))+dNum(A(1));case 'op:# - #':return dNum(A(0))-dNum(A(1));
+   case 'op:# * #':return dNum(A(0))*dNum(A(1));case 'op:# / #':return dNum(A(0))/dNum(A(1));
+   case 'op:uneix # i #':return dStr(A(0))+dStr(A(1));case 'op:arrodoneix #':return Math.round(dNum(A(0)));
+   case 'op:# = #':{const a=A(0),b=A(1);return dIsNum(a)&&dIsNum(b)?dNum(a)===dNum(b):dStr(a).toLowerCase()===dStr(b).toLowerCase()}
+   case 'op:# < #':{const a=A(0),b=A(1);return dIsNum(a)&&dIsNum(b)?dNum(a)<dNum(b):dStr(a)<dStr(b)}
+   case 'op:# > #':{const a=A(0),b=A(1);return dIsNum(a)&&dIsNum(b)?dNum(a)>dNum(b):dStr(a)>dStr(b)}
+   case 'op:# i #':return !!A(0)&&!!A(1);case 'op:# o #':return !!A(0)||!!A(1);case 'op:no #':return !A(0);
+   case 'mo:posició x':return s.x;case 'mo:posició y':return s.y;case 'mo:direcció':return s.dir;
+   case 'se:cronòmetre':return R.clock-R.t0;case 'se:resposta':return R.answer;
+   case 'se:tecla # premuda?':return R.held.has(dKeyOf(A(0)));
+   case 'se:tocant #?':return touching(s,A(0));
+   case 'se:tocant el color #?':return !!(DBG_COL[G.id]&&DBG_COL[G.id](A(0),s,R));
+   case 'se:posició x de #':{const o=orig(A(0));return o&&!o.stage?o.x:0}
+   case 'se:posició y de #':{const o=orig(A(0));return o&&!o.stage?o.y:0}
+   case 'li:element # de #':{const a=R.lists[A(1)]||[];const v=a[Math.round(dNum(A(0)))-1];return v===undefined?'':v}
+   case 'li:llargada de #':return (R.lists[A(0)]||[]).length;
+  }
+  if(c==='li')return listVal(sig);if(c==='va')return R.vars[sig]!==undefined?R.vars[sig]:0;return ''}
+ const cond=(t,s)=>{const{args}=dParse(t);return !!arg(args[0],s)};
+ /* ---------- accions ---------- */
+ function setXY(s,x,y){if(s.stage)return;const fx=s.hw-10,fy=s.hh-10;x=Math.max(-240-fx,Math.min(240+fx,x));y=Math.max(-180-fy,Math.min(180+fy,y));
+  if(s.pen.down){pctx.strokeStyle=`hsl(${(s.pen.hue*3.6)%360},80%,45%)`;pctx.lineWidth=s.pen.size;pctx.lineCap='round';pctx.beginPath();pctx.moveTo(...P(s.x,s.y));pctx.lineTo(...P(x,y));pctx.stroke()}
+  s.x=x;s.y=y}
+ function bounce(s){let d=s.dir;const r=d*Math.PI/180;
+  if(s.x-s.hw<-240&&Math.sin(r)<0){d=-d;s.x=-240+s.hw}else if(s.x+s.hw>240&&Math.sin(r)>0){d=-d;s.x=240-s.hw}
+  if(s.y+s.hh>180&&Math.cos(r)>0){d=180-d;s.y=180-s.hh}else if(s.y-s.hh<-180&&Math.cos(r)<0){d=180-d;s.y=-180+s.hh}
+  s.dir=dNorm(d)}
+ function startHat(sc,target){R.threads.filter(t=>t.sc===sc&&t.spr===target&&!t.done).forEach(t=>t.done=true);
+  R.ended=false;const t={sc,spr:target,pending:null,done:false};t.gen=runSeq(t,sc.b);R.threads.push(t);R.queue.push(t);return t}
+ const targetsOf=n=>n==='Escenari'?[stage]:R.sprites.filter(s=>s.name===n&&!s.dead);
+ function fire(test,only){const ts=[];proj.forEach(sc=>{if(test(sc.b[0]))(only?[only].filter(o=>o.name===sc.spr||(o.stage&&sc.spr==='Escenari')):targetsOf(sc.spr)).forEach(tg=>ts.push(startHat(sc,tg)))});return ts}
+ const broadcast=m=>fire(h=>h.c==='ev'&&/^quan rebi \[/.test(h.t)&&h.t.slice(11,-1).toLowerCase()===dStr(m).toLowerCase());
+ function setBD(k){R.bd=((k%BD.length)+BD.length)%BD.length;fire(h=>h.t===`quan l'escenari canviï al fons [${BD[R.bd]}]`)}
+ function* waitS(sec){const end=R.clock+Math.max(0,sec);do{yield{frame:1}}while(R.clock<end)}
+ function* runSeq(t,bs){for(const b of bs){if(t.done||t.spr.dead)return;yield* runBlock(t,b)}}
+ function* runBlock(t,b){const s=t.spr;yield{at:b};if(t.done||s.dead)return;const tx=b.t||'';
+  if(b.hat)return;
+  const{sig,args}=dParse(tx);const A=k=>arg(args[k],s);const N=k=>dNum(A(k));
+  if(b.body){
+   if(sig==='per sempre'){for(;;){yield* runSeq(t,b.body);yield{frame:1};yield{at:b,loop:1}}}
+   if(sig==='repeteix #'){const n=Math.round(N(0));for(let k=0;k<n;k++){if(k)yield{at:b,loop:1};yield* runSeq(t,b.body);yield{frame:1}}return}
+   if(sig==='repeteix fins #'){let first=true;while(!cond(tx,s)){if(!first)yield{at:b,loop:1};first=false;yield* runSeq(t,b.body);yield{frame:1}}return}
+   if(/^si # llavors/.test(sig)){if(cond(tx,s))yield* runSeq(t,b.body);else if(b.body2)yield* runSeq(t,b.body2);return}
+   return}
+  switch(b.c+':'+sig){
+   case 'mo:mou-te # passos':{const r=s.dir*Math.PI/180,n=N(0);setXY(s,s.x+n*Math.sin(r),s.y+n*Math.cos(r));break}
+   case 'mo:gira ↻ # graus':s.dir=dNorm(s.dir+N(0));break;case 'mo:gira ↺ # graus':s.dir=dNorm(s.dir-N(0));break;
+   case 'mo:apunta en direcció #':s.dir=dNorm(N(0));break;
+   case 'mo:apunta cap a #':{const o=A(0)==='punter del ratolí'?R.mouse:orig(A(0));if(o){const dx=o.x-s.x,dy=o.y-s.y;if(dx||dy)s.dir=dNorm(Math.atan2(dx,dy)*180/Math.PI)}break}
+   case 'mo:ves a #':{const o=A(0);if(o==='posició aleatòria')setXY(s,rnd(-240,240),rnd(-180,180));else if(o==='punter del ratolí')setXY(s,R.mouse.x,R.mouse.y);else{const q=orig(o);if(q)setXY(s,q.x,q.y)}break}
+   case 'mo:ves a x: # y: #':setXY(s,N(0),N(1));break;
+   case 'mo:llisca en # segons fins a x: # y: #':{const d=N(0),x0=s.x,y0=s.y,x1=N(1),y1=N(2),t0=R.clock;while(R.clock<t0+d){const f=d>0?(R.clock-t0)/d:1;setXY(s,x0+(x1-x0)*f,y0+(y1-y0)*f);yield{frame:1}}setXY(s,x1,y1);break}
+   case 'mo:suma # a x':setXY(s,s.x+N(0),s.y);break;case 'mo:suma # a y':setXY(s,s.x,s.y+N(0));break;
+   case 'mo:assigna el valor # a x':setXY(s,N(0),s.y);break;case 'mo:assigna el valor # a y':setXY(s,s.x,N(0));break;
+   case 'mo:rebota en tocar una vora':bounce(s);break;case 'mo:fixa el tipus de rotació #':s.rot=A(0);break;
+   case 'lo:digues #':s.say=dStr(A(0));break;
+   case 'lo:digues # durant # segons':{s.say=dStr(A(0));yield* waitS(N(1));s.say='';break}
+   case 'lo:canvia el vestit a #':{const k=s.cosList.indexOf(A(0));if(k>=0)s.cos=k;else if(dIsNum(A(0)))s.cos=Math.max(0,N(0)-1);break}
+   case 'lo:següent vestit':s.cos=(s.cos+1)%s.cosList.length;break;
+   case "lo:fixa l'efecte # a #":s.fx[A(0)]=N(1);break;case "lo:augmenta l'efecte # en #":s.fx[A(0)]=(s.fx[A(0)]||0)+N(1);break;
+   case 'lo:esborra els efectes gràfics':s.fx={color:0,brillantor:0};break;
+   case 'lo:fixa la mida a # %':s.size=Math.max(5,N(0));break;case 'lo:augmenta la mida en #':s.size=Math.max(5,s.size+N(0));break;
+   case "lo:mostra't":s.vis=true;break;case "lo:amaga't":s.vis=false;break;
+   case 'lo:canvia el fons a #':{const k=BD.indexOf(A(0));setBD(k>=0?k:0);break}
+   case 'lo:següent fons de pantalla':setBD(R.bd+1);break;
+   case 'so:inicia el so #':A(0)==='Pop'?SFX.pop():tone(300,900,.2,'sine',.12);break;
+   case 'va:assigna a # el valor #':R.vars[A(0)]=A(1);break;
+   case 'va:augmenta # en #':R.vars[A(0)]=dNum(R.vars[A(0)])+N(1);break;
+   case 'li:afegeix # a #':(R.lists[A(1)]=R.lists[A(1)]||[]).push(A(0));break;
+   case 'li:esborra-ho tot de #':R.lists[A(0)]=[];break;
+   case 'ev:envia a tots #':broadcast(A(0));yield{frame:1};break;
+   case 'ev:envia a tots # i espera':{const ts=broadcast(A(0));do{yield{frame:1}}while(ts.some(x=>!x.done));break}
+   case 'co:espera # segons':yield* waitS(N(0));break;
+   case 'co:espera fins #':while(!cond(tx,s))yield{frame:1};break;
+   case 'co:atura #':{const w=A(0);if(w==='tot'){R.threads.forEach(x=>x.done=true);R.stopAll=true;stat.innerHTML='<p><b>Atura tot:</b> el programa s\'ha aturat.</p>'}else if(/altres/.test(w))R.threads.forEach(x=>{if(x!==t&&x.spr===s)x.done=true});else t.done=true;return}
+   case 'co:crea una còpia de #':{const src=A(0)==='jo mateix'?s:orig(A(0));if(src&&!src.stage&&R.sprites.filter(x=>x.clone).length<60){const cpy=Object.assign(mkSpr(src.name),{x:src.x,y:src.y,dir:src.dir,rot:src.rot,cos:src.cos,size:src.size,vis:src.vis,clone:true,fx:Object.assign({},src.fx)});
+     R.sprites.splice(R.sprites.indexOf(src)+1,0,cpy);fire(h=>h.t==='quan una còpia meva comenci',cpy)}break}
+   case 'co:esborra aquesta còpia':if(s.clone){s.dead=true;R.sprites=R.sprites.filter(x=>x!==s);t.done=true;return}break;
+   case 'se:pregunta # i espera':{R.ask={q:dStr(A(0)),t};if(!s.stage)s.say=R.ask.q;ask.hidden=false;ask.querySelector('label').textContent=R.ask.q;const inp=ask.querySelector('input');inp.value='';setTimeout(()=>inp.focus(),30);
+     while(R.ask)yield{frame:1};s.say='';break}
+   case 'se:reinicia el cronòmetre':R.t0=R.clock;break;
+   case 'pe:baixa el llapis':s.pen.down=true;setXY(s,s.x,s.y);break;case 'pe:puja el llapis':s.pen.down=false;break;
+   case 'pe:esborra-ho tot':pctx.clearRect(0,0,W,H);break;case 'pe:fixa la mida del llapis a #':s.pen.size=N(0);break;
+   case 'pe:augmenta # del llapis en #':s.pen.hue=(s.pen.hue+N(1))%100;break;case 'pe:fixa # del llapis a #':s.pen.hue=N(1)%100;break;
+   case 'pe:toca la nota # durant # pulsacions':{const f=440*Math.pow(2,(N(0)-69)/12);tone(f,f,Math.max(.08,N(1)),'triangle',.12);yield* waitS(N(1));break}
+   default:
+    if(b.c==='my'){const def=proj.find(sc=>sc.spr===(s.stage?'Escenari':s.name)&&sc.b[0].t===`defineix [${tx}]`);if(def)yield* runSeq(t,def.b)}
+  }}
+ /* ---------- planificador (com Scratch: cada fil corre fins que espera) ---------- */
+ const mini=b=>B(b.c,b.t);
+ function showPending(t){const b=t.pending.at||t.pending;const who=t.spr.stage?"L'escenari":(t.spr.clone?'Una còpia de '+t.spr.name:t.spr.name);
+  stat.innerHTML=`${R.last?`<p class="dlast">Acaba de fer: ${mini(R.last)}</p>`:''}<p class="dnow"><b>${who}</b> ${t.pending.loop?'torna a dalt del bucle':'farà ara'}: ${mini(b)}</p>`;
+  paintHL(new Set([b.dbi]),true)}
+ let hlNow=new Set();
+ function paintHL(set,scroll){hlNow.forEach(k=>{if(!set.has(k)){const e=bEl.get(k);if(e)e.classList.remove('on','dnowb')}});
+  set.forEach(k=>{const e=bEl.get(k);if(e){e.classList.add('on');if(scroll){e.classList.add('dnowb');const r=e.getBoundingClientRect(),cr=code.getBoundingClientRect();if(r.top<cr.top||r.bottom>cr.bottom)code.scrollTop+=r.top-cr.top-cr.height/3}}});hlNow=set}
+ function runFrame(allow,now){let used=0,guard=0;
+  while(R.queue.length){const t=R.queue[0];
+   if(t.done||t.spr.dead){R.queue.shift();continue}
+   if(t.pending){if(allow<=0){if(!R.paused){R.paused=true;R.pausedAt=now;showPending(t)}return used}
+    allow--;used++;R.paused=false;const b=t.pending.at;R.last=b;R.flash.set(b.dbi,now);t.pending=null}
+   let r;try{r=t.gen.next()}catch(e){console.error(e);r={done:true}}
+   if(r.done){t.done=true;R.queue.shift();continue}
+   if(r.value.at){t.pending=r.value;if(++guard>20000){R.queue.shift();}continue}
+   R.queue.shift()}
+  return used}
+ function tick(dt,now){if(!R.running)return;
+  let allow=0;if(R.mode==='run')allow=1e9;else if(R.paused&&(R.mode==='slow'?now-R.pausedAt>700:R.stepReq))allow=1;
+  const used=runFrame(allow,now);if(used)R.stepReq=0;
+  if(!R.queue.length){R.clock+=dt;R.threads=R.threads.filter(t=>!t.done&&!t.spr.dead);R.queue=R.threads.slice();
+   if(!R.threads.length&&!R.ended){R.ended=true;paintHL(new Set());const ev=!R.stopAll&&proj.some(sc=>/^(quan es cliqui aquest personatge|quan la tecla)/.test(sc.b[0].t));if(!ev)R.running=false;
+    if(!R.stopAll)stat.innerHTML=`${R.last?`<p class="dlast">Acaba de fer: ${mini(R.last)}</p>`:''}<p class="dnow">${ev?"<b>Ara no s'està fent cap bloc.</b> Clica un personatge o prem una tecla: hi ha programes que s'engeguen així.":"<b>El programa ha acabat.</b> Clica «⚑ Comença» per tornar-hi."}</p>`;btnState()}
+   else if(R.mode!=='run'&&!R.paused){R.seek+=dt;if(R.seek>.6)stat.innerHTML=`${R.last?`<p class="dlast">Acaba de fer: ${mini(R.last)}</p>`:''}<p class="dnow">⏳ <b>Esperant…</b> El programa espera (que passi el temps, que premis una tecla o que es toquin dos personatges).</p>`}}
+  if(R.paused)R.seek=0;
+  if(R.mode==='run'&&!R.ended){const s=new Set();R.flash.forEach((t0,k)=>{if(now-t0<140)s.add(k);else R.flash.delete(k)});paintHL(s,false)}}
+ /* ---------- dibuix ---------- */
+ function draw(){const c=ctx;(DBG_BG[G.id]||DBG_BG.simo)(c,R);c.drawImage(pcv,0,0);
+  const cur=R.paused&&R.queue[0]?R.queue[0].spr:null;
+  R.sprites.forEach(s=>{if(!s.vis)return;const[X,Y]=P(s.x,s.y);c.save();if(s.fx.brillantor&&!/^(Vermell|Blau|Verd|Groc)$/.test(s.name))c.filter=`brightness(${1+s.fx.brillantor/100})`;try{s.L.d(c,s,X,Y)}catch(e){}c.restore();
+   if(s===cur){c.save();c.strokeStyle='#FFD500';c.lineWidth=3;c.setLineDash([6,5]);c.strokeRect(X-s.hw-4,Y-s.hh-4,2*s.hw+8,2*s.hh+8);c.restore()}});
+  R.sprites.forEach(s=>{if(s.vis&&s.say){const[X,Y]=P(s.x,s.y);bubble(c,X,Y-s.hh+18,String(s.say))}});
+  const mv=[...vars].map(v=>[v,dStr(typeof R.vars[v]==='number'?Math.round(R.vars[v]*100)/100:R.vars[v])]);if(mv.length)monitors(c,mv);
+  [...lists].forEach((l,k)=>listPanel(c,344,10+k*176,128,lists.size>1?168:340,l,R.lists[l]||[]))}
+ /* ---------- controls ---------- */
+ const btnState=()=>{const on=R.running;$('.dstep').disabled=!on||R.mode!=='step';$('.dslow').disabled=!on||R.mode==='slow';$('.drun').disabled=!on||R.mode==='run';$('.dstop').disabled=!on;
+  $('.dslow').textContent=R.mode==='slow'?'A poc a poc…':'A poc a poc';$('.drun').textContent='Velocitat normal';
+  if(on&&R.mode!=='step'){$('.dstep').disabled=false;$('.dstep').textContent='❚❚ Pausa'}else $('.dstep').textContent='Un pas ▸'};
+ $('.dgo').onclick=()=>{reset();R.running=true;R.mode=R.mode==='run'?'run':R.mode;fire(h=>h.t==='quan la ⚑ es cliqui');btnState()};
+ $('.dstep').onclick=()=>{if(R.mode!=='step'){R.mode='step';btnState();return}if(R.paused)R.stepReq=1};
+ $('.dslow').onclick=()=>{R.mode='slow';btnState()};
+ $('.drun').onclick=()=>{R.mode='run';R.paused=false;btnState()};
+ $('.dstop').onclick=()=>{R.threads.forEach(t=>t.done=true);R.threads=[];R.queue=[];R.running=false;R.paused=false;R.mode='step';paintHL(new Set());stat.innerHTML='<p>Aturat. Clica «⚑ Comença» per tornar a començar.</p>';ask.hidden=true;R.ask=null;btnState()};
+ const answer=()=>{if(!R.ask)return;R.answer=ask.querySelector('input').value;R.ask=null;ask.hidden=true};
+ ask.querySelector('.askok').onclick=answer;ask.querySelector('input').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();answer()}e.stopPropagation()});
+ const press=k=>{if(R.held.has(k))return;R.held.add(k);if(R.running)fire(h=>{const q=h.c==='ev'&&h.t.match(/^quan la tecla \[([^\]]+)\] es premi$/);return !!q&&dKeyOf(q[1])===k});const b=[...md.querySelectorAll('.dkey')].find(x=>x.dataset.key===k);if(b)b.setAttribute('aria-pressed','true')};
+ const release=k=>{R.held.delete(k);const b=[...md.querySelectorAll('.dkey')].find(x=>x.dataset.key===k);if(b)b.setAttribute('aria-pressed','false')};
+ md.querySelectorAll('.dkey').forEach(b=>b.onclick=()=>{const k=b.dataset.key;R.held.has(k)?release(k):press(k)});
+ const kd=e=>{if(e.target.closest&&e.target.closest('input'))return;if(e.key==='Escape'){close();return}const k=e.key.length===1?e.key.toLowerCase():e.key;if(keys.has(k)||k===' '||/^Arrow/.test(k)){e.preventDefault();e.stopPropagation();if(!e.repeat)press(k)}};
+ const ku=e=>{const k=e.key.length===1?e.key.toLowerCase():e.key;if(R.held.has(k)){e.stopPropagation();release(k)}};
+ document.addEventListener('keydown',kd,true);document.addEventListener('keyup',ku,true);
+ const toS=e=>{const r=cv.getBoundingClientRect();return{x:(e.clientX-r.left)/r.width*W-240,y:180-(e.clientY-r.top)/r.height*H}};
+ let drag=null;
+ cv.addEventListener('pointerdown',e=>{const m=toS(e);R.mouse=m;const hit=[...R.sprites].reverse().find(s=>s.vis&&m.x>=s.x-s.hw&&m.x<=s.x+s.hw&&m.y>=s.y-s.hh&&m.y<=s.y+s.hh);if(hit){drag={s:hit,dx:hit.x-m.x,dy:hit.y-m.y,moved:false};try{cv.setPointerCapture(e.pointerId)}catch(_){}}});
+ cv.addEventListener('pointermove',e=>{const m=toS(e);R.mouse=m;if(drag){if(Math.abs(m.x+drag.dx-drag.s.x)+Math.abs(m.y+drag.dy-drag.s.y)>3)drag.moved=true;if(drag.moved){drag.s.x=m.x+drag.dx;drag.s.y=m.y+drag.dy}}});
+ cv.addEventListener('pointerup',e=>{if(drag&&!drag.moved&&R.running)fire(h=>h.t==='quan es cliqui aquest personatge',drag.s);drag=null});
+ let raf=0,lastT=performance.now();
+ const loop=now=>{if(!md.isConnected){cleanup();return}raf=requestAnimationFrame(loop);const dt=Math.min(.05,Math.max(0,(now-lastT)/1000));lastT=now;try{tick(dt,now);draw()}catch(e){console.error(e)}};
+ function cleanup(){cancelAnimationFrame(raf);document.removeEventListener('keydown',kd,true);document.removeEventListener('keyup',ku,true);R.threads.forEach(t=>t.done=true)}
+ function close(){md.remove();cleanup()}
+ md.querySelector('.gclose').onclick=close;md.addEventListener('click',e=>{if(e.target===md)close()});
+ reset();draw();raf=requestAnimationFrame(loop);md.querySelector('.dgo').focus();
+ return{R,md,tick,draw,press,release,fire}}
 
 /* ===================== DICCIONARI: explicació de cada bloc i concepte ===================== */
 const GLOSS={
@@ -935,6 +1434,10 @@ posxy:{cat:'mo',ex:{c:'mo',t:'posició y',sh:'rep'},title:'Posició x / posició
  what:"Un bloc rodó que diu on és el personatge ara: el seu número x o el seu número y.",
  why:"Per fer preguntes com «el meteorit ja ha arribat a baix de tot?».",
  how:"Els blocs rodons no van sols: es posen dins dels forats d'altres blocs. Per exemple: «posició y &lt; -170»."},
+deltre:{cat:'se',ex:{c:'se',t:'posició y de [Pilota]',sh:'rep'},title:"Posició d'un altre personatge",
+ what:"Un bloc rodó que diu on és un altre personatge: la seva x, la seva y, la seva direcció…",
+ why:"Perquè un personatge pugui seguir-ne un altre, com la pala de l'ordinador que segueix la pilota.",
+ how:"A Sensors busca el bloc «fons nr de Escenari». Clica el triangle de la dreta i tria el personatge (per exemple Pilota). Després clica el de l'esquerra i tria «posició y»."},
 direccio:{cat:'mo',ex:{c:'mo',t:'direcció',sh:'rep'},title:'Direcció (bloc rodó)',demo:'dir',
  what:"Un bloc rodó que diu cap on mira el personatge ara mateix.",
  why:"Per fer càlculs amb la direcció, per exemple per fer rebotar una pilota.",
@@ -1149,6 +1652,179 @@ function openDic(){document.querySelectorAll('.dicmodal').forEach(m=>m.remove())
   ${groups.map(([n,ks])=>`<h3>${n}</h3><div class="gchips">${ks.map(glossChip).join('')}</div>`).join('')}</div>`;
  document.body.appendChild(md);const close=()=>md.remove();md.addEventListener('click',ev=>{if(ev.target===md)close()});md.querySelector('.gclose').onclick=close;md.querySelector('.gclose').focus()}
 
+/* ===================== COM ES FA? Guies pas a pas de l'editor de Scratch ===================== */
+const HOWTO={
+projecte:{title:'Crear un projecte nou',steps:[
+ "Obre <b>scratch.mit.edu</b> i clica <b>Crea</b> (a dalt de tot). Si ja ets dins de l'editor, ves al menú <b>Fitxer</b> → <b>Nou</b>.",
+ "Si la pàgina surt en un altre idioma, clica la bola del món (a dalt a l'esquerra) i tria <b>Català</b>.",
+ "A la barra de dalt, al costat de «Fitxer», hi ha una casella amb el nom del projecte. Esborra el que hi posa i escriu el nom del teu joc.",
+ "Si no vols el gat, a baix a la dreta clica'l i després la paperera petita que surt a sobre."]},
+'personatge-biblio':{title:'Afegir un personatge de la biblioteca',steps:[
+ "Mira a baix a la dreta: és la zona dels personatges. Hi ha un botó rodó blau amb un cap de gat: és <b>Tria un personatge</b>.",
+ "Clica aquest botó. S'obre la biblioteca amb molts personatges.",
+ "A dalt a l'esquerra hi ha una lupa per buscar. Escriu el nom que et diem (per exemple <b>Star</b>) i clica el dibuix que surt.",
+ "El personatge apareix a l'escenari i a la llista de baix a la dreta.",
+ "Per canviar-li el nom: a sobre de la llista de personatges hi ha la casella <b>Personatge</b>. Esborra el nom en anglès i escriu el nom nou (per exemple <b>Estrella</b>).",
+ "Per fer-lo més petit, canvia el número de la casella <b>Mida</b> (100 és la mida normal, 50 és la meitat)."]},
+'personatge-dibuix':{title:'Crear i dibuixar un personatge nou',steps:[
+ "A baix a la dreta, posa el ratolí <b>a sobre</b> del botó rodó blau del gat (Tria un personatge), però <b>no cliquis</b>.",
+ "Surt un menú cap amunt amb quatre icones. Clica el <b>pinzell</b> (posa «Dibuixa»).",
+ "S'obre la pestanya <b>Vestits</b> amb un full en blanc: aquí dibuixes el personatge.",
+ "Per fer un rectangle: clica l'eina del <b>quadrat</b> (Rectangle). A dalt, a <b>Emplenament</b>, tria el color. Després arrossega el ratolí sobre el full.",
+ "Per escriure un text: clica l'eina <b>T</b> (Text), clica sobre el full i escriu.",
+ "Quan acabis, posa-li nom: a la casella <b>Personatge</b>, a sobre de la llista de personatges, escriu el nom nou.",
+ "Torna a la pestanya <b>Codi</b> (a dalt a l'esquerra) per programar-lo."]},
+'duplicar-personatge':{title:'Duplicar un personatge',steps:[
+ "A baix a la dreta, a la llista de personatges, fes <b>clic dret</b> sobre el personatge que vols copiar.",
+ "Tria <b>duplica</b>. Apareix una còpia amb el mateix dibuix i els mateixos programes.",
+ "Clica la còpia i canvia-li el nom a la casella <b>Personatge</b>.",
+ "Si cal, canvia-li el color a la pestanya <b>Vestits</b> (eina del pot de pintura o <b>Emplenament</b>) i els programes que siguin diferents."]},
+'duplicar-blocs':{title:'Duplicar blocs',steps:[
+ "Fes <b>clic dret</b> sobre el primer bloc que vols copiar (si cliques el bloc de dalt de tot, es copia tot el programa).",
+ "Tria <b>Duplica</b>. La còpia s'enganxa al ratolí.",
+ "Mou el ratolí fins on la vols deixar i fes clic.",
+ "Ara canvia el que sigui diferent: la tecla, el número…"]},
+'fons-biblio':{title:'Triar un fons',steps:[
+ "Mira a la dreta de tot, a baix: hi ha el quadre de l'<b>Escenari</b> i, a sota, un botó rodó blau amb una imatge: <b>Tria un fons</b>.",
+ "Clica'l. S'obre la biblioteca de fons.",
+ "Busca el fons amb la lupa (per exemple <b>Stars</b>) i clica'l. L'escenari canvia."]},
+'fons-dibuix':{title:'Dibuixar un fons',steps:[
+ "A la dreta de tot, a baix, posa el ratolí <b>a sobre</b> del botó rodó blau de <b>Tria un fons</b>, però <b>no cliquis</b>.",
+ "Al menú que surt, clica el <b>pinzell</b> (Dibuixa). S'obre la pestanya <b>Fons</b> amb un fons en blanc.",
+ "Fes servir l'eina <b>Rectangle</b> i tria el color a <b>Emplenament</b>. Arrossega per dibuixar parets, línies o el que necessitis.",
+ "Posa-li nom: a dalt hi ha la casella <b>Fons</b>. Escriu-hi el nom (per exemple <b>Nivell 1</b>).",
+ "Per fer un altre fons semblant: clic dret sobre el fons de la llista de l'esquerra → <b>duplica</b>, i canvia-hi el que vulguis."]},
+vestits:{title:'Els vestits d\'un personatge',steps:[
+ "Clica el personatge a la llista de baix a la dreta.",
+ "A dalt a l'esquerra, clica la pestanya <b>Vestits</b>. A l'esquerra veuràs tots els seus dibuixos.",
+ "Per fer un dibuix nou a partir d'un altre: clic dret sobre el vestit → <b>duplica</b>. Després modifica la còpia amb les eines de dibuix.",
+ "Per posar-li nom, escriu-lo a la casella <b>Vestit</b>, a dalt del dibuix.",
+ "Torna a la pestanya <b>Codi</b> per programar."]},
+so:{title:'Afegir un so',steps:[
+ "Clica el personatge que farà el so.",
+ "A dalt a l'esquerra, clica la pestanya <b>Sons</b>.",
+ "A baix a l'esquerra hi ha un botó rodó amb un altaveu: <b>Tria un so</b>. Clica'l.",
+ "Busca el so amb la lupa (per exemple <b>Pop</b>) i clica'l. Pots escoltar-lo abans passant-hi el ratolí per sobre.",
+ "Torna a la pestanya <b>Codi</b>. Ara el so ja surt al desplegable dels blocs de so."]},
+variable:{title:'Crear una variable',steps:[
+ "A la pestanya <b>Codi</b>, clica la categoria <b>Variables</b> (el cercle taronja de l'esquerra).",
+ "Clica el botó <b>Crea una variable</b>.",
+ "Escriu el nom (per exemple <b>punts</b>).",
+ "Deixa marcat <b>Per a tots els personatges</b> i clica <b>D'acord</b>.",
+ "Ja tens els blocs «assigna a punts el valor» i «augmenta punts en». Si deixes marcada la casella del costat, el valor es veu a l'escenari."]},
+llista:{title:'Crear una llista',steps:[
+ "A la categoria <b>Variables</b>, clica el botó <b>Crea una llista</b>.",
+ "Escriu el nom (per exemple <b>seqüència</b>) i clica <b>D'acord</b>.",
+ "A l'escenari apareix un quadre on es veu què hi ha dins la llista. Sota la categoria hi ha els blocs de la llista (de color taronja fosc)."]},
+missatge:{title:'Crear un missatge',steps:[
+ "Arrossega un bloc <b>envia a tots</b> (o <b>quan rebi</b>) de la categoria Esdeveniments.",
+ "Clica el triangle ▾ del bloc i tria <b>Nou missatge</b>.",
+ "Escriu el nom del missatge (per exemple <b>fi del joc</b>) i clica <b>D'acord</b>.",
+ "Fes servir exactament el mateix nom al bloc que envia i al bloc que rep."]},
+extensio:{title:'Afegir una extensió (Llapis, Música…)',steps:[
+ "A baix de tot a l'esquerra, sota les categories, hi ha un botó blau: <b>Afegeix una Extensió</b>.",
+ "Clica'l i tria l'extensió que necessites (<b>Llapis</b> o <b>Música</b>).",
+ "Apareix una categoria nova a la llista de l'esquerra, amb els seus blocs."]},
+blocpropi:{title:'Crear un bloc propi',steps:[
+ "Clica la categoria <b>Els meus blocs</b> (cercle rosa, l'última de la llista).",
+ "Clica el botó <b>Crea un bloc</b>.",
+ "Escriu el nom del bloc (per exemple <b>quadrat</b>) i clica <b>D'acord</b>.",
+ "A la zona de programes apareix el bloc rosa <b>defineix quadrat</b>. Posa a sota els blocs que ha de fer.",
+ "El bloc rosa amb el nom ja surt a la categoria Els meus blocs: arrossega'l on el vulguis fer servir."]},
+escenari:{title:"Programar l'escenari",steps:[
+ "L'escenari també pot tenir programes, igual que els personatges.",
+ "A la dreta de tot, a baix, clica el quadre de l'<b>Escenari</b> (al costat de la llista de personatges).",
+ "Ara la zona de programes és la de l'escenari: el que hi posis serà seu.",
+ "Quan vulguis tornar a programar un personatge, clica'l a la llista de personatges."]}
+};
+/* quines guies corresponen a cada pas (segons el que diu el text) */
+const HOWRULES=[
+ ['projecte',/Crea un projecte nou/],
+ ['personatge-dibuix',/Dibuixa<\/b> \(el pinzell\)/],
+ ['personatge-biblio',/Tria un personatge<\/b> i (busca|afegeix)|Afegeix el personatge|Afegeix un personatge/],
+ ['duplicar-personatge',/Clic dret (al|a la) (Talp|Pala)|Duplica'l 3 vegades: <b>Blau/],
+ ['duplicar-blocs',/clic dret (sobre un programa|al bloc)|Clic dret a la «pregunta»|Duplica'l 3 vegades i canvia|Clic dret → <b>Duplica|Duplica'n un altre|Truc: fes el primer «si» i duplica/i],
+ ['fons-biblio',/Tria un fons|Tria el fons|fons verd|fons amb terra|fons que t'agradi|fons de prat/],
+ ['fons-dibuix',/pinta parets|Pinta un fons|Al fons, pinta|Al fons, duplica|ves a <b>Fons<\/b>/],
+ ['vestits',/<b>Vestits<\/b>/],
+ ['so',/<b>Sons<\/b>/],
+ ['variable',/Crea una variable|Crea la variable|Crea les variables/],
+ ['llista',/Crea una llista|Crea una llista nova|llista nova/],
+ ['missatge',/Nou missatge|Crea els missatges/],
+ ['extensio',/xtensió/],
+ ['blocpropi',/Crea un bloc/],
+ ['escenari',/[Ee]scenari/]];
+function howtoBtns(text){const ks=HOWRULES.filter(([k,re])=>re.test(text)).map(([k])=>k);
+ return ks.length?`<div class="howtos">${ks.map(k=>`<button type="button" class="howbtn" data-howto="${k}">Com es fa? · ${HOWTO[k].title}</button>`).join('')}</div>`:''}
+function openHowto(k){const h=HOWTO[k];if(!h)return;document.querySelectorAll('.gmodal').forEach(m=>m.remove());
+ const md=document.createElement('div');md.className='modal gmodal';
+ md.innerHTML=`<div class="dlg gdlg howdlg" role="dialog" aria-modal="true" aria-labelledby="hwh"><button type="button" class="gclose" aria-label="Tanca">✕</button>
+  <p class="eyebrow2">Com es fa a Scratch?</p><h2 id="hwh">${h.title}</h2>
+  <div class="sayrow"><ol class="tx howsteps">${h.steps.map(s=>`<li>${s}</li>`).join('')}</ol>${sayBtn()}</div>
+  <button type="button" class="btn go gok">Entesos!</button></div>`;
+ document.body.appendChild(md);const close=()=>md.remove();md.addEventListener('click',ev=>{if(ev.target===md)close()});md.querySelector('.gclose').onclick=close;md.querySelector('.gok').onclick=close;md.querySelector('.gclose').focus()}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-howto]');if(!b)return;e.preventDefault();e.stopPropagation();openHowto(b.dataset.howto)},true);
+
+/* personatges i fons nous de cada missió */
+const SPRDEF={
+ Nau:['biblio','Rocketship'],Estrella:['biblio','Star'],Meteorit:['biblio','Rocks'],
+ Papallona:['biblio','Butterfly 1'],Flor:['biblio','Flower'],Vespa:['biblio','Bee'],
+ Llapis:['biblio','Pencil'],Robot:['biblio','Robot'],
+ Talp:['biblio','Hedgehog'],'Talp daurat':['dup','Talp'],'Botó':['dibuix','un rectangle verd amb el text JUGA'],
+ Granota:['biblio','Frog'],Tronc:['dibuix','un tronc marró (un rectangle marró arrodonit)'],
+ Peix:['biblio','Fish'],Ham:['dibuix','un ham petit (una línia i una corba)'],'Tauró':['biblio','Shark 2'],
+ Explorador:['biblio','Ball'],Meta:['biblio','Star'],Fantasma:['biblio','Ghost'],
+ Pilota:['biblio','Ball'],'Pala E':['dibuix','un rectangle verd, prim i alt'],'Pala D':['dup','Pala E'],
+ Vermell:['dibuix','un quadrat vermell gran'],Blau:['dup','Vermell'],Verd:['dup','Vermell'],Groc:['dup','Vermell'],'Simó':['biblio','el personatge que vulguis (per exemple Giga)']};
+const NEWSPR={nau:{0:['Nau'],3:['Estrella'],6:['Meteorit']},papallona:{0:['Papallona'],2:['Flor'],5:['Vespa']},pissarra:{0:['Llapis']},robot:{0:['Robot']},
+ talps:{0:['Talp'],4:['Talp daurat'],5:['Botó']},granota:{0:['Granota'],2:['Tronc']},pesca:{0:['Peix'],1:['Ham'],6:['Tauró']},
+ laberint:{0:['Explorador'],2:['Meta'],5:['Fantasma']},pong:{0:['Pilota'],1:['Pala E'],2:['Pala D']},simo:{0:['Vermell','Blau','Verd','Groc'],3:['Simó']}};
+const NEWBG={nau:{0:['biblio','Stars']},papallona:{0:['biblio','Blue Sky']},robot:{0:['biblio','el que t\'agradi']},talps:{0:['biblio','Garden Rock']},granota:{0:['biblio','Blue Sky']},pesca:{0:['biblio','Underwater 1']},
+ laberint:{0:['dibuix','«Nivell 1»: un laberint amb parets blaves'],2:['dibuix','«Nivell 2» i «Nivell 3»: duplica el Nivell 1 i canvia-hi les parets'],3:['dibuix','«Final»: un fons sense parets, amb el text FINAL']},
+ pong:{0:['dibuix','un fons fosc'],3:['dibuix','línia vermella a l\'esquerra i línia blava a la dreta']}};
+/* recursos nous (variables, llistes, missatges, extensions, blocs propis) detectats del codi */
+const RESX={simo:{2:{msg:['1','2','3','4']}}};
+function resOf(m){const R={va:new Set(),li:new Set(),msg:new Set(),ext:new Set(),my:new Set()};
+ const walk=bs=>(bs||[]).forEach(b=>{const t=b.t||'';let r;
+  if(b.c==='va'){const q=t.match(/^(assigna a|augmenta|mostra la variable|amaga la variable) \[([^\]]+)\]/);if(q)R.va.add(q[2])}
+  for(const q of t.matchAll(/‹va:([^‹›]+)›/g))R.va.add(q[1]);
+  if(b.c==='li'){for(const q of t.matchAll(/\[([^\]]+)\]/g))R.li.add(q[1])}
+  for(const q of t.matchAll(/‹li:[^›‹]*?\[([^\]]+)\]/g))R.li.add(q[1]);
+  for(const q of t.matchAll(/‹li:([^‹›\[\] ]+)›/g))R.li.add(q[1]);
+  if(b.c==='ev'&&(r=t.match(/^(envia a tots|quan rebi) \[([^\]]+)\]/)))R.msg.add(r[2]);
+  if(b.c==='pe')R.ext.add(/nota|instrument|tempo|tambor|pulsacions/.test(t)?'Música':'Llapis');
+  if(b.c==='my'&&(r=t.match(/^defineix \[([^\]]+)\]/)))R.my.add(r[1]);
+  walk(b.body);walk(b.body2)});
+ (m.scripts||[]).forEach(sc=>walk(sc.b));return R}
+function newRes(gi,i){const G=GAMES[gi],cur=resOf(G.M[i]),old={va:new Set(),li:new Set(),msg:new Set(),ext:new Set(),my:new Set()};
+ for(let k=0;k<i;k++){const r=resOf(G.M[k]);const x=((RESX[G.id]||{})[k])||{};for(const t in r)r[t].forEach(v=>old[t].add(v));(x.msg||[]).forEach(v=>old.msg.add(v))}
+ const x=((RESX[G.id]||{})[i])||{};(x.msg||[]).forEach(v=>cur.msg.add(v));
+ const o={};for(const t in cur)o[t]=[...cur[t]].filter(v=>!old[t].has(v));return o}
+const RESTXT={ext:['extensio',n=>`<b>Extensió ${n}</b>: afegeix-la (botó blau de baix a l'esquerra).`],
+ va:['variable',n=>`<b>Variable «${n}»</b>: a Variables, clica «Crea una variable», escriu <b>${n}</b> i tria «Per a tots els personatges».`],
+ li:['llista',n=>`<b>Llista «${n}»</b>: a Variables, clica «Crea una llista» i escriu <b>${n}</b>.`],
+ msg:['missatge',ns=>`<b>${ns.length>1?'Missatges':'Missatge'} ${ns.map(n=>'«'+n+'»').join(', ')}</b>: es creen amb «Nou missatge», dins del triangle ▾ d'un bloc «envia a tots» o «quan rebi».`],
+ my:['blocpropi',n=>`<b>Bloc propi «${n}»</b>: a Els meus blocs, clica «Crea un bloc» i escriu <b>${n}</b>.`]};
+function resLines(gi,i){const r=newRes(gi,i);const L=[];
+ ['ext','va','li','my'].forEach(t=>r[t].forEach(n=>L.push(`<li>${RESTXT[t][1](n)} <button type="button" class="howbtn" data-howto="${RESTXT[t][0]}">Com es fa?</button></li>`)));
+ if(r.msg.length)L.push(`<li>${RESTXT.msg[1](r.msg)} <button type="button" class="howbtn" data-howto="missatge">Com es fa?</button></li>`);
+ return L}
+function needs(gi,i){const id=GAMES[gi].id;return{spr:(NEWSPR[id]||{})[i]||[],bg:(NEWBG[id]||{})[i]||null}}
+function sprLine(n){const d=SPRDEF[n]||['biblio',n];
+ if(d[0]==='biblio')return `<li><b>${n}</b>: agafa'l de la biblioteca (busca <b>${d[1]}</b>) i posa-li el nom <b>${n}</b>. <button type="button" class="howbtn" data-howto="personatge-biblio">Com es fa?</button></li>`;
+ if(d[0]==='dup')return `<li><b>${n}</b>: fes una còpia del personatge <b>${d[1]}</b> i posa-li el nom <b>${n}</b>. <button type="button" class="howbtn" data-howto="duplicar-personatge">Com es fa?</button></li>`;
+ return `<li><b>${n}</b>: l'has de <b>dibuixar tu</b>: ${d[1]}. Posa-li el nom <b>${n}</b>. <button type="button" class="howbtn" data-howto="personatge-dibuix">Com es fa?</button></li>`}
+function newSprBox(gi,i){const{spr,bg}=needs(gi,i);const rl=resLines(gi,i);if(!spr.length&&!bg&&!rl.length)return '';
+ return `<div class="newspr"><h3>Abans de programar, prepara:</h3><ul>${bg?`<li><b>Fons</b>: ${bg[0]==='biblio'?`tria el fons <b>${bg[1]}</b> de la biblioteca. <button type="button" class="howbtn" data-howto="fons-biblio">Com es fa?</button>`:`l'has de <b>dibuixar tu</b>: ${bg[1]}. <button type="button" class="howbtn" data-howto="fons-dibuix">Com es fa?</button>`}</li>`:''}${spr.map(sprLine).join('')}${rl.join('')}</ul></div>`}
+function needsLine(gi,i){const{spr,bg}=needs(gi,i);const r=newRes(gi,i);
+ const parts=spr.map(n=>{const d=SPRDEF[n]||['biblio'];return `<b>${n}</b>${d[0]==='dibuix'?' (el dibuixaràs tu)':(d[0]==='dup'?' (una còpia de '+d[1]+')':'')}`});
+ const P=[];if(spr.length)P.push((spr.length>1?'personatges nous: ':'un personatge nou: ')+parts.join(', '));
+ if(bg)P.push('un fons '+(bg[0]==='dibuix'?'que dibuixaràs tu':'nou'));
+ const nm=(a,s1,sN)=>a.length?(a.length>1?sN:s1)+' '+a.map(n=>'<b>'+n+'</b>').join(', '):null;
+ [nm(r.ext,"l'extensió","les extensions"),nm(r.va,'la variable','les variables'),nm(r.li,'la llista','les llistes'),nm(r.msg,'el missatge','els missatges'),nm(r.my,'el bloc propi','els blocs propis')].forEach(x=>x&&P.push(x));
+ if(!P.length)return '';
+ return `<p class="needs2">Per a aquesta missió necessitaràs ${P.length>1?P.slice(0,-1).join(', ')+' i '+P[P.length-1]:P[0]}. Al pas «Ara fes-ho a Scratch» t'expliquem com fer-ho.</p>`}
+
 /* ===================== JOC 1 · La Nau Estelada ===================== */
 function drawRocket(c,x,y,flame){c.save();c.translate(x,y);
  if(flame){c.fillStyle='#FF9A1F';c.beginPath();c.moveTo(-7,19);c.lineTo(0,31+Math.random()*8);c.lineTo(7,19);c.fill();c.fillStyle='#FFE14D';c.beginPath();c.moveTo(-4,19);c.lineTo(0,26+Math.random()*4);c.lineTo(4,19);c.fill()}
@@ -1218,7 +1894,7 @@ const M_NAU=[
   note:"Clica <b>Comença</b> i fixa't bé: què fa la nau primer? I després?",
   scripts:[{spr:'Nau',b:[hatFlag({k:'s1'}),{c:'mo',t:'ves a x: {0} y: {-180}',k:'s2'},{c:'mo',t:'llisca en {1} segons fins a x: {0} y: {-120}',k:'s3'},{c:'lo',t:'digues {Hola! Som-hi!} durant {2} segons',k:'s4'}]}],
   steps:[
-   `Clical personatge <b>Nau</b> (a baix a la dreta).`,
+   `Clica el personatge <b>Nau</b> (a baix a la dreta).`,
    `A ${CAT('ev')} arrossega ${B('ev','quan la ⚑ es cliqui')} a la zona de programes.`,
    `A ${CAT('mo')} agafa ${B('mo','ves a x: {0} y: {0}')} i enganxa'l a sota. Canvia la y per <b>-180</b>.`,
    `Enganxa ${B('mo','llisca en {1} segons fins a x: {0} y: {0}')} i posa la y a <b>-120</b>.`,
@@ -1615,13 +2291,13 @@ GAMES.push({id:'pissarra',name:'La Pissarra Màgica',col:'pe',stars:2,final:6,
   story:"Farem un dibuix màgic: el llapis avança, gira gairebé mitja volta i canvia de color, 36 vegades.",
   idea:"Quan repeteixes moltes vegades una cosa petita, surt un dibuix gran i sorprenent. Això és un patró.",
   note:"Clica <b>Comença</b> i mira com es forma el dibuix.",
-  scripts:[{spr:'Llapis',b:[hatFlag({g:1}),{c:'pe',t:'esborra-ho tot',k:'p1',g:1},{c:'mo',t:'ves a x: {-50} y: {0}',k:'p2',g:1},{c:'pe',t:'fixa la mida del llapis a {3}',k:'pw'},{c:'pe',t:'baixa el llapis',k:'p3',g:1},{c:'co',t:'repeteix {36}',k:'rep',body:[{c:'mo',t:'mou-te {100} passos',k:'pm',g:1},{c:'mo',t:'gira ↻ {170} graus',k:'pg'},{c:'pe',t:'canvia [color] del llapis en {5}',k:'pc'}]}]}],
+  scripts:[{spr:'Llapis',b:[hatFlag({g:1}),{c:'pe',t:'esborra-ho tot',k:'p1',g:1},{c:'mo',t:'ves a x: {-50} y: {0}',k:'p2',g:1},{c:'pe',t:'fixa la mida del llapis a {3}',k:'pw'},{c:'pe',t:'baixa el llapis',k:'p3',g:1},{c:'co',t:'repeteix {36}',k:'rep',body:[{c:'mo',t:'mou-te {100} passos',k:'pm',g:1},{c:'mo',t:'gira ↻ {170} graus',k:'pg'},{c:'pe',t:'augmenta [color] del llapis en {5}',k:'pc'}]}]}],
   distract:[{c:'pe',t:'puja el llapis'}],
   steps:[
    `Canvia el «ves a» per <b>x: -50</b> i <b>y: 0</b>.`,
    `Afegeix ${B('pe','fixa la mida del llapis a {3}')} abans de baixar el llapis.`,
    `Canvia el «repeteix» a <b>36</b> i el gir a <b>170</b>.`,
-   `Dins del repeteix, afegeix ${B('pe','canvia [color] del llapis en {5}')}.`,
+   `Dins del repeteix, afegeix ${B('pe','augmenta [color] del llapis en {5}')}.`,
    `Prova-ho!`],
   hint:"Si tot surt del mateix color, mira que el «augmenta color del llapis» estigui DINS del repeteix.",
   extra:"Canvia el 170 per 150, per 100 o per 160. Cada número fa un dibuix diferent!",
@@ -1642,7 +2318,7 @@ GAMES.push({id:'pissarra',name:'La Pissarra Màgica',col:'pe',stars:2,final:6,
    `Fes ${B('ev','quan la tecla [espai] es premi')} amb ${B('pe','esborra-ho tot')}.`,
    `Dibuixa!`],
   hint:"Si el llapis va cap al costat equivocat, revisa la direcció de cada tecla amb la llista de sota de l'escenari.",
-  extra:`Fes que la tecla <b>c</b> canviï de color: ${B('ev','quan la tecla [c] es premi')} amb ${B('pe','canvia [color] del llapis en {10}')}.`,
+  extra:`Fes que la tecla <b>c</b> canviï de color: ${B('ev','quan la tecla [c] es premi')} amb ${B('pe','augmenta [color] del llapis en {10}')}.`,
   puzzle:{type:'bug',q:"Amb la fletxa amunt, el llapis va cap avall. Toca el bloc que està malament.",
    blocks:[{c:'ev',t:'quan la tecla [fletxa amunt] es premi',hat:1,id:'h'},{c:'mo',t:'apunta en direcció {180}',id:'w'},{c:'mo',t:'mou-te {10} passos',id:'m'}],answer:'w',
    explain:"Molt bé! Amunt és 0. El 180 és avall."}
@@ -1972,7 +2648,7 @@ const E_GRA={
  start(S){Object.assign(S,{fy:-100,vy:0,lx:240,rap:-6,pts:0,jumping:false,o:{x:-150,y:-100}})},
  key(S,k,X){if(k!=='space')return;X.flash('jump');
   if(S.lvl===1){if(S.jumping)return;S.jumping=true;SFX.jump();X.spawn((function*(){S.o.y=S.fy;yield{hl:'j1'};yield* glideTo(S,S.o,-150,-20,.3);yield{hl:'j2'};yield* glideTo(S,S.o,-150,-100,.3);yield{hl:null};S.jumping=false})());return}
-  S.vy=12;SFX.jump()},
+  if(S.fy>-99.5)return;X.flash('ground');S.vy=12;SFX.jump()},
  update(S,dt,X){const L=S.lvl;
   if(L===1)S.fy=S.o.y;
   else{S.fy+=S.vy*30*dt;S.vy-=30*dt;if(S.fy<-100){S.fy=-100;S.vy=0}}
@@ -2014,17 +2690,18 @@ GAMES.push({id:'granota',name:'La Granota Saltadora',col:'mo',stars:3,final:6,
   story:"El salt amb «llisca» sembla un robot. Les granotes de veritat pugen ràpid i van frenant. Farem gravetat!",
   idea:"La variable «velocitat» diu quant es mou la granota a cada moment. Quan salta, la velocitat és gran. A cada volta li traiem 1: puja cada cop més lenta i després cau. Quan toca a terra, s'atura.",
   note:"Prem l'espai i mira el número «velocitat»: puja a 12 i va baixant.",
-  scripts:[{spr:'Granota',b:gGrav({})},{spr:'Granota',b:[{c:'ev',t:'quan la tecla [espai] es premi',hat:1,k:'jump',g:1},{c:'va',t:'assigna a [velocitat] el valor {12}'}]}],
+  scripts:[{spr:'Granota',b:gGrav({})},{spr:'Granota',b:[{c:'ev',t:'quan la tecla [espai] es premi',hat:1,k:'jump',g:1},{c:'co',t:'si «op:‹mo:posició y› = {-100}» llavors',k:'ground',body:[{c:'va',t:'assigna a [velocitat] el valor {12}'}]}]}],
   distract:[{c:'va',t:'augmenta [velocitat] en {1}'}],
   steps:[
    `Esborra el programa de l'espai amb els «llisca». Crea la variable <b>velocitat</b>.`,
    `Programa de la bandera: ${B('mo','ves a x: {-150} y: {-100}')}, ${B('va','assigna a [velocitat] el valor {0}')} i ${B('co','per sempre')}.`,
    `Dins del per sempre: ${B('mo','suma ‹va:velocitat› a y')} i ${B('va','augmenta [velocitat] en {-1}')}.`,
    `I també: ${B('co','si «op:‹mo:posició y› < {-100}» llavors')} amb ${B('mo','assigna el valor {-100} a y')} i ${B('va','assigna a [velocitat] el valor {0}')}.`,
-   `Nou programa de l'espai: ${B('va','assigna a [velocitat] el valor {12}')}.`],
+   `Nou programa de l'espai: un ${B('co','si «» llavors')} amb ${BB('op','‹mo:posició y› = {-100}')} (vol dir «si és a terra»).`,
+   `Dins del «si»: ${B('va','assigna a [velocitat] el valor {12}')}.`],
   tip:"Velocitat positiva = puja. Velocitat negativa = baixa.",
   hint:"Si la granota cau i desapareix per sota, revisa el «si» que la para a terra.",
-  extra:"Ara la granota pot saltar a l'aire. Fes que només salti si és a terra: posa el «assigna a velocitat el valor 12» dins d'un «si posició y = -100».",
+  extra:"Prova de canviar el 12 per 8 o per 16. Què passa amb el salt? I si canvies el -1 de la gravetat per -2?",
   puzzle:{type:'quiz',q:"Què passaria si no traguéssim 1 a la velocitat?",options:["La granota pujaria i no tornaria a baixar mai","La granota no saltaria","Saltaria més baix"],answer:0,explain:"Exacte! Treure 1 a cada volta és el que fa la gravetat."}
 },
 { name:'El tronc rodolant', concept:'Moviment horitzontal', col:'mo', piece:'Tronc',
@@ -2123,7 +2800,7 @@ const E_PES={
    if(L>=2&&L!==3&&!f.dead&&Math.hypot(tipx-f.x,tipy-f.y)<22*f.size+6){S.pts++;SFX.pop();X.flash('catch');
     if(L===2){f.x=-200;f.y=rnd(-150,100);f.dir=1}else f.dead=true}});
   S.F=S.F.filter(f=>!f.dead);
-  if(L>=6){S.sh.x+=S.sh.dir*4*30*dt;if(S.sh.x>190||S.sh.x<-190){S.sh.dir=-S.sh.dir;S.sh.x=Math.max(-190,Math.min(190,S.sh.x))}
+  if(L>=7){S.sh.x+=S.sh.dir*4*30*dt;if(S.sh.x>190||S.sh.x<-190){S.sh.dir=-S.sh.dir;S.sh.x=Math.max(-190,Math.min(190,S.sh.x))}
    if(Math.abs(tipx-S.sh.x)<44&&Math.abs(tipy-S.sh.y)<18)X.end('go','Ñam!',`El tauró ha mossegat l'ham. Punts: ${S.pts}`,'shark','Ñam!')}
   S.bub=(S.bub+dt)%4},
  mons(S){return S.lvl>=2?[['punts',S.pts]]:[]},
@@ -2133,7 +2810,7 @@ const E_PES={
   c.strokeStyle='#2F9E5C';c.lineWidth=5;c.lineCap='round';[[40,340],[60,345],[420,335],[445,340]].forEach(([x,y],i)=>{c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+(i%2?12:-12),y-40,x,y-80-(i%2)*20);c.stroke()});
   c.fillStyle='rgba(255,255,255,.4)';for(let i=0;i<6;i++){const by=H-((S.bub*60+i*60)%H);c.beginPath();c.arc(70+i*70,by,3+i%3,0,7);c.fill()}
   S.F.forEach(f=>{const[x,y]=P(f.x,f.y);drawFish(c,x,y,f.dir,f.hue,f.size)});
-  if(S.lvl>=6){const[x,y]=P(S.sh.x,S.sh.y);drawShark(c,x,y,S.sh.dir);if(S.say)bubble(c,x,y-10,S.say)}
+  if(S.lvl>=7){const[x,y]=P(S.sh.x,S.sh.y);drawShark(c,x,y,S.sh.dir);if(S.say)bubble(c,x,y-10,S.say)}
   if(S.lvl>=2||S.thumb){const[x,y]=P(S.hx,S.hy);drawHook(c,x,y)}}
 };
 const cHat=(g)=>({c:'co',t:'quan una còpia meva comenci',hat:1,g});
@@ -2142,7 +2819,7 @@ const cCatch=(g,nw)=>({c:'co',t:'si «se:tocant [Ham]?» llavors',k:'catch',g,nw
 const cSwim=(g)=>[{c:'mo',t:'mou-te {3} passos',g},{c:'mo',t:'rebota en tocar una vora',g}];
 const pFlag=(o)=>[hatFlag({g:1}),{c:'mo',t:"fixa el tipus de rotació [esquerra-dreta]",g:1},{c:'lo',t:"amaga't",g:o.g},{c:'co',t:'repeteix {5}',k:'clone',g:o.g,body:[{c:'co',t:'crea una còpia de [jo mateix]',g:o.g},{c:'co',t:'espera {1} segons',g:o.g}]}];
 const pColors=(g)=>[{c:'lo',t:"fixa l'efecte [color] a ‹op:nombre a l'atzar entre {0} i {200}›",g,nw:!g},{c:'lo',t:"fixa la mida a ‹op:nombre a l'atzar entre {50} i {100}› %",g,nw:!g}];
-GAMES.push({id:'pesca',name:'Pesca Màgica',col:'co',stars:4,final:6,
+GAMES.push({id:'pesca',name:'Pesca Màgica',col:'co',stars:4,final:7,
  learn:"Clons: còpies d'un mateix personatge",
  sub:"Un llac ple de peixos de colors. Aprendràs a fer clons: còpies que neden soles.",
  how:"Mou l'ham amb el ratolí (o el dit) i pesca tots els peixos que puguis. Però compte amb el tauró: si toca l'ham, s'acaba la partida!",
@@ -2221,23 +2898,37 @@ GAMES.push({id:'pesca',name:'Pesca Màgica',col:'co',stars:4,final:6,
   extra:"Fes que els peixos petits valguin 2 punts i els grans 1. Pista: el bloc «mida» de l'Aspecte.",
   puzzle:{type:'quiz',q:"Per què cada peix surt d'un color diferent?",options:["Perquè cada còpia tria un número a l'atzar","Perquè els dibuixem un per un","Perquè l'aigua els pinta"],answer:0,explain:"Exacte! El mateix programa, amb un número sorpresa, fa peixos diferents."}
 },
-{ name:'El tauró', concept:'Còpies sense fi', col:'se', piece:'Tauró i peixos sense fi',
-  story:"Ara surten peixos sense parar, de l'esquerra a la dreta. I hi ha un tauró: si toca l'ham, s'acaba!",
+{ name:'Peixos sense fi', concept:'Còpies sense fi', col:'co', piece:'Peixos sense fi',
+  story:"Ara surten peixos sense parar, de l'esquerra a la dreta, i desapareixen quan arriben a l'altra banda.",
   idea:"Si creem còpies per sempre, les hem d'esborrar quan surten de l'escenari. Si no, n'hi hauria cada cop més i l'ordinador aniria lent.",
-  note:"Pesca peixos i aparta l'ham del tauró.",
+  note:"Mira com surten peixos sense parar i com desapareixen a la dreta. Pesca'n tants com puguis!",
   scripts:[{spr:'Peix',b:[hatFlag({g:1}),{c:'mo',t:"fixa el tipus de rotació [esquerra-dreta]",g:1},{c:'lo',t:"amaga't",g:1},{c:'co',t:'per sempre',k:'clone',nw:1,body:[{c:'co',t:'crea una còpia de [jo mateix]',g:1},{c:'co',t:'espera {1.5} segons'}]}]},
-   {spr:'Peix',b:[cHat(1),...pColors(1),cGo(1),{c:'lo',t:"mostra't",g:1},{c:'co',t:'per sempre',k:'cloop',g:1,body:[{c:'mo',t:'suma {3} a x',nw:1},{c:'co',t:'si «op:‹mo:posició x› > {230}» llavors',k:'gone',nw:1,body:[{c:'co',t:'esborra aquesta còpia'}]},cCatch(1)]}]},
-   {spr:'Tauró',tag:'Personatge nou',b:[hatFlag({g:1}),{c:'mo',t:'ves a x: {0} y: {-40}',g:1},{c:'co',t:'per sempre',k:'sloop',g:1,body:[{c:'mo',t:'mou-te {4} passos',g:1},{c:'mo',t:'rebota en tocar una vora',g:1},{c:'co',t:'si «se:tocant [Ham]?» llavors',k:'shark',body:[{c:'lo',t:'digues {Ñam!}'},{c:'co',t:'atura [tot]'}]}]}]}],
+   {spr:'Peix',b:[cHat(1),...pColors(1),cGo(1),{c:'lo',t:"mostra't",g:1},{c:'co',t:'per sempre',k:'cloop',g:1,body:[{c:'mo',t:'suma {3} a x',nw:1},{c:'co',t:'si «op:‹mo:posició x› > {230}» llavors',k:'gone',nw:1,body:[{c:'co',t:'esborra aquesta còpia'}]},cCatch(1)]}]}],
   distract:[{c:'co',t:'repeteix {5}',body:[]}],
   steps:[
-   `Al Peix, canvia el «repeteix 5» per ${B('co','per sempre')} i l'espera per <b>1.5</b>.`,
-   `Al programa de la còpia, canvia «mou-te» i «rebota» per ${B('mo','suma {3} a x')}.`,
-   `Afegeix ${B('co','si «op:‹mo:posició x› > {230}» llavors')} amb ${B('co','esborra aquesta còpia')}.`,
-   `Afegeix el personatge <b>Shark 2</b>, anomena'l <b>Tauró</b>: neda amb «mou-te 4» i «rebota».`,
-   `Al Tauró: si toca l'Ham → ${B('lo','digues {Ñam!}')} i ${B('co','atura [tot]')}.`],
+   `Al Peix, al programa de la bandera, canvia el «repeteix 5» per ${B('co','per sempre')} i l'espera per <b>1.5</b>.`,
+   `Al programa de la còpia, treu «mou-te» i «rebota» i posa-hi ${B('mo','suma {3} a x')}: així els peixos van sempre cap a la dreta.`,
+   `Afegeix ${B('co','si «op:‹mo:posició x› > {230}» llavors')} amb ${B('co','esborra aquesta còpia')} a dins.`,
+   `Prova-ho: surten peixos sense parar?`],
   hint:"Si el joc va lent, potser no esborres les còpies quan surten per la dreta.",
-  extra:"Fes que el tauró vagi més ràpid quan tens més de 10 punts.",
-  puzzle:{type:'quiz',q:"Si no esborréssim les còpies que surten per la dreta, què passaria?",options:["N'hi hauria cada cop més i l'ordinador aniria lent","Tornarien a l'esquerra","No passaria res"],answer:0,explain:"Exacte! Scratch només pot tenir unes 300 còpies. Esborrar-los és important."}
+  extra:"Fes que alguns peixos vagin més ràpid: canvia el 3 per un número a l'atzar entre 2 i 5.",
+  puzzle:{type:'quiz',q:"Si no esborréssim les còpies que surten per la dreta, què passaria?",options:["N'hi hauria cada cop més i l'ordinador aniria lent","Tornarien a l'esquerra","No passaria res"],answer:0,explain:"Exacte! Scratch només pot tenir unes 300 còpies. Esborrar-les és important."}
+},
+{ name:'El tauró', concept:'Un enemic que patrulla', col:'se', piece:'Tauró',
+  story:"Al llac hi arriba un tauró que neda d'un costat a l'altre. Si toca l'ham, s'acaba la partida!",
+  idea:"El tauró és un personatge nou amb el seu propi programa: neda sense parar, rebota a les vores i, si toca l'ham, s'acaba el joc. Ara has d'apartar l'ham a temps.",
+  note:"Pesca peixos i aparta l'ham del tauró.",
+  scripts:[{spr:'Tauró',tag:'Personatge nou',b:[hatFlag({g:1}),{c:'mo',t:"fixa el tipus de rotació [esquerra-dreta]"},{c:'mo',t:'ves a x: {0} y: {-40}'},{c:'co',t:'per sempre',k:'sloop',body:[{c:'mo',t:'mou-te {4} passos'},{c:'mo',t:'rebota en tocar una vora'},{c:'co',t:'si «se:tocant [Ham]?» llavors',k:'shark',body:[{c:'lo',t:'digues {Ñam!}'},{c:'co',t:'atura [tot]'}]}]}]}],
+  scriptnote:"Els programes del Peix i de l'Ham es queden igual.",
+  distract:[{c:'mo',t:'suma {3} a x'}],
+  steps:[
+   `Afegeix el personatge <b>Shark 2</b> i anomena'l <b>Tauró</b>.`,
+   `Al Tauró, posa ${B('ev','quan la ⚑ es cliqui')}, ${B('mo',"fixa el tipus de rotació [esquerra-dreta]")} i ${B('mo','ves a x: {0} y: {-40}')}.`,
+   `Afegeix ${B('co','per sempre')} amb ${B('mo','mou-te {4} passos')} i ${B('mo','rebota en tocar una vora')}.`,
+   `Dins del «per sempre», un «si» amb ${BB('se','tocant [Ham]?')}: a dins, ${B('lo','digues {Ñam!}')} i ${B('co','atura [tot]')}.`],
+  hint:"Si el tauró neda cap per avall quan rebota, et falta el «fixa el tipus de rotació».",
+  extra:"Fes que el tauró vagi més ràpid quan tens més de 10 punts. Pista: un «si punts > 10» i una variable per a la rapidesa.",
+  puzzle:{type:'quiz',q:"Per què el «si tocant Ham» ha d'estar dins del «per sempre»?",options:["Perquè el tauró ha de comprovar tota l'estona si toca l'ham","Perquè el tauró nedi més ràpid","No cal, pot anar fora"],answer:0,explain:"Exacte! Si fos fora, només ho comprovaria una vegada, al principi."}
 }]});
 
 /* ===================== JOC 8 · El Laberint ===================== */
@@ -2387,15 +3078,17 @@ GAMES.push({id:'laberint',name:'El Laberint',col:'se',stars:4,final:6,
 
 /* ===================== JOC 9 · Ping-Pong ===================== */
 const E_PONG={
- pad:L=>L>=3?['w','s','up','down']:(L>=2?['w','s']:[]),
+ pad:L=>L>=7?['w','s']:(L>=3?['w','s','up','down']:(L>=2?['w','s']:[])),
  glow:L=>['bloop','lloop','rloop'],
- idle:L=>['Clica «Comença»',L>=3?"esquerra: W i S · dreta: fletxes ▲ ▼":(L>=2?'i mou la pala amb W i S':'i mira la pilota')],
+ idle:L=>['Clica «Comença»',L>=7?"tu jugues amb W i S contra l'ordinador":L>=3?"esquerra: W i S · dreta: fletxes ▲ ▼":(L>=2?'i mou la pala amb W i S':'i mira la pilota')],
  init(S){Object.assign(S,{bx:60,by:30,bdir:60,sp:6,ly:-20,ry:40,pE:2,pD:1,idleR:9})},
  start(S){Object.assign(S,{bx:0,by:0,bdir:45,sp:6,ly:0,ry:0,pE:0,pD:0,idleR:9})},
  threads(S,X){if(S.lvl<5)return[];return[(function*(){yield{hl:'wwait'};yield{until:()=>S.pE>=5||S.pD>=5};yield{hl:'wif'};X.end('win',S.pE>=5?"Guanya l'esquerra!":'Guanya la dreta!',`${S.pE} a ${S.pD}`,'wif',S.pE>=5?"Guanya l'esquerra!":'Guanya la dreta!')})()]},
  update(S,dt,X){const L=S.lvl,f=30*dt;
   if(L>=2){if(S.held.has('w'))S.ly+=8*f;if(S.held.has('s'))S.ly-=8*f;S.ly=Math.max(-145,Math.min(145,S.ly))}
-  if(L>=3){if(S.held.has('up')||S.held.has('down')){S.idleR=0;if(S.held.has('up'))S.ry+=8*f;if(S.held.has('down'))S.ry-=8*f}else{S.idleR+=dt;if(S.idleR>1.5){const d=S.by-S.ry;S.ry+=Math.sign(d)*Math.min(Math.abs(d),5*f)}}S.ry=Math.max(-145,Math.min(145,S.ry))}
+  if(L>=7){const d=S.by-S.ry;if(Math.abs(d)>3){S.ry+=Math.sign(d)*5*f;X.flash('ai')}}
+  else if(L>=3){if(S.held.has('up'))S.ry+=8*f;if(S.held.has('down'))S.ry-=8*f}
+  S.ry=Math.max(-145,Math.min(145,S.ry));
   const sp=(L>=6?S.sp:6)*f,r=S.bdir*Math.PI/180;S.bx+=Math.sin(r)*sp;S.by+=Math.cos(r)*sp;
   const vx=Math.sin(r);
   if(L>=3){const hitL=vx<0&&Math.abs(S.bx+215)<16&&Math.abs(S.by-S.ly)<42,hitR=vx>0&&Math.abs(S.bx-215)<16&&Math.abs(S.by-S.ry)<42;
@@ -2417,10 +3110,10 @@ const bGol=(o)=>[{c:'co',t:'si «se:tocant el color [vermell]?» llavors',k:'gol
  {c:'co',t:'si «se:tocant el color [blau]?» llavors',k:'golE',g:o.g,body:[{c:'va',t:'augmenta [punts esquerra] en {1}',g:o.g},{c:'mo',t:'ves a x: {0} y: {0}',g:o.g},...(o.rap?[{c:'va',t:'assigna a [rapidesa] el valor {6}',nw:1}]:[])]}];
 const bTop=(o)=>[hatFlag({g:1}),...(o.pts?[{c:'va',t:'assigna a [punts esquerra] el valor {0}',g:o.gp},{c:'va',t:'assigna a [punts dreta] el valor {0}',g:o.gp}]:[]),...(o.rap?[{c:'va',t:'assigna a [rapidesa] el valor {6}',nw:1}]:[]),{c:'mo',t:'ves a x: {0} y: {0}',g:1},{c:'mo',t:'apunta en direcció {45}',g:1}];
 const bMove=(o)=>o.rap?{c:'mo',t:'mou-te ‹va:rapidesa› passos',nw:1}:{c:'mo',t:'mou-te {6} passos',g:1};
-GAMES.push({id:'pong',name:'Ping-Pong',col:'op',stars:5,final:6,
+GAMES.push({id:'pong',name:'Ping-Pong',col:'op',stars:5,final:7,
  learn:"Direcció, dos jugadors i l'operador «o»",
  sub:"Un joc per a dues persones amb el mateix teclat. El primer que arriba a 5 punts guanya!",
- how:"Jugador de l'esquerra: tecles W i S. Jugador de la dreta: fletxes ▲ ▼. Si jugues sol/a, la pala de la dreta es mou sola quan no toques les fletxes.",
+ how:"Tu jugues amb la pala de l'esquerra (tecles W i S) i l'ordinador mou la de la dreta. Abans d'arribar-hi, programaràs un joc per a dues persones (la segona amb les fletxes ▲ ▼).",
  engine:E_PONG,M:[
 { name:'La pilota rebota', concept:'Direcció', col:'mo', piece:'Pilota',
   story:"Una pilota que va en diagonal i rebota a totes les parets.",
@@ -2455,7 +3148,7 @@ GAMES.push({id:'pong',name:'Ping-Pong',col:'op',stars:5,final:6,
 { name:'Dos jugadors', concept:'Operador «o»', col:'op', piece:'Pala dreta i rebots',
   story:"Ara hi juguen dues persones! I la pilota ha de rebotar a les dues pales.",
   idea:"El bloc «o» uneix dues preguntes. És cert si una de les dues és certa. La pilota rebota si toca la pala esquerra O la pala dreta. També existeix «i», que només és cert si les dues ho són.",
-  note:"Juga amb W/S i les fletxes. Si jugues sol/a, la pala dreta es mou sola.",
+  note:"Juga amb W/S i les fletxes ▲ ▼. Si jugues sol/a, mou tu les dues pales!",
   scripts:[{spr:'Pala D',tag:'Duplicat',b:pPad('Pala D','fletxa amunt','fletxa avall',215,'rloop',1)},
    {spr:'Pilota',b:[...bTop({}),{c:'co',t:'per sempre',k:'bloop',g:1,body:[bMove({}),{c:'mo',t:'rebota en tocar una vora',k:'edge',g:1},bHit({})]}]}],
   distract:[{c:'co',t:'si «op:«se:tocant [Pala E]?» i «se:tocant [Pala D]?»» llavors',body:[]}],
@@ -2515,6 +3208,23 @@ GAMES.push({id:'pong',name:'Ping-Pong',col:'op',stars:5,final:6,
   hint:"Si la pilota travessa les pales quan va molt ràpid, posa un límit: que la rapidesa no passi de 14.",
   extra:"Fes que la direcció del servei sigui a l'atzar: «apunta en direcció (nombre a l'atzar entre 30 i 150)».",
   puzzle:{type:'quiz',q:"Per què tornem a posar la rapidesa a 6 després d'un gol?",options:["Perquè cada punt comenci a velocitat normal","Perquè la pilota s'aturi","Per error"],answer:0,explain:"Exacte! Així cada punt comença fàcil i es va complicant."}
+},
+{ name:"Contra l'ordinador", concept:'Seguir un altre personatge', col:'se', piece:'Pala automàtica',
+  story:"No sempre hi ha algú per jugar. Programarem la pala de la dreta perquè la mogui l'ordinador.",
+  idea:"La pala de l'ordinador mira on és la pilota. Si la pilota és més amunt que la pala, la pala puja una mica. Si és més avall, baixa una mica. Com que es mou a poc a poc, la pots guanyar!",
+  note:"Ara tu jugues amb W i S i l'ordinador mou la pala de la dreta.",
+  scripts:[{spr:'Pala D',tag:'Programa nou',b:[hatFlag({g:1}),{c:'mo',t:'ves a x: {215} y: {0}',g:1},{c:'co',t:'per sempre',k:'rloop',body:[{c:'co',t:'si «op:‹se:posició y de [Pilota]› > ‹mo:posició y›» llavors',k:'ai',body:[{c:'mo',t:'suma {5} a y'}]},{c:'co',t:'si «op:‹se:posició y de [Pilota]› < ‹mo:posició y›» llavors',body:[{c:'mo',t:'suma {-5} a y'}]}]}]}],
+  scriptnote:"Treu el programa antic de la Pala D, el de les fletxes. Els programes de la Pilota i de la Pala E es queden igual.",
+  distract:[{c:'mo',t:'suma {50} a y'}],
+  steps:[
+   `A la Pala D, treu el programa de les fletxes: arrossega'l cap a la zona dels blocs i s'esborrarà.`,
+   `Fes un programa nou: ${B('ev','quan la ⚑ es cliqui')}, ${B('mo','ves a x: {215} y: {0}')} i ${B('co','per sempre')}.`,
+   `A ${CAT('se')}, busca el bloc rodó <b>fons nr de Escenari</b>. Canvia «Escenari» per <b>Pilota</b> i «fons nr» per <b>posició y</b>: ara diu ${R('se','posició y de [Pilota]')}.`,
+   `Dins del «per sempre», un «si» amb ${BB('op','‹se:posició y de [Pilota]› > ‹mo:posició y›')} i, a dins, ${B('mo','suma {5} a y')}.`,
+   `Un altre «si» amb ${BB('op','‹se:posició y de [Pilota]› < ‹mo:posició y›')} i, a dins, ${B('mo','suma {-5} a y')}.`],
+  hint:"Si la pala va al revés de la pilota, revisa els símbols: > és «més gran que» (més amunt) i < és «més petit que» (més avall).",
+  extra:"Fes que l'ordinador sigui més difícil canviant el 5 per 7. O més fàcil, amb 3. Quin número és el més divertit?",
+  puzzle:{type:'quiz',q:"Per què la pala de l'ordinador es mou de 5 en 5 i no de 50 en 50?",options:["Perquè si fos molt ràpida no la podries guanyar mai","Perquè 50 no hi cap","Perquè l'ordinador no sap comptar fins a 50"],answer:0,explain:"Exacte! Movent-se a poc a poc, de vegades no arriba a temps. Així el joc és divertit."}
 }]});
 
 /* ===================== JOC 10 · Simó Diu ===================== */
@@ -2570,7 +3280,7 @@ GAMES.push({id:'simo',name:'Simó Diu',col:'li',stars:5,final:6,
  engine:E_SIMO,M:[
 { name:"Botons que s'encenen", concept:'Efectes i notes', col:'lo', piece:'Botons de colors',
   story:"El Simó té quatre botons de colors. Quan en cliques un, s'encén i fa una nota musical.",
-  idea:"L'efecte «brillantor» fal personatge més clar. El posem a 50 un moment i després el tornem a 0. Així sembla que el botó s'encén.",
+  idea:"L'efecte «brillantor» fa el personatge més clar. El posem a 50 un moment i després el tornem a 0. Així sembla que el botó s'encén.",
   note:"Clica <b>Comença</b> i després clica els botons de colors.",
   scripts:[{spr:'Vermell',tag:'Personatge nou',b:[{c:'ev',t:'quan es cliqui aquest personatge',hat:1,k:'bclick'},...sLight()]}],
   steps:[
@@ -2578,58 +3288,69 @@ GAMES.push({id:'simo',name:'Simó Diu',col:'li',stars:5,final:6,
    `Passa el ratolí per sobre del botó <b>Tria un personatge</b> i clica <b>Dibuixa</b> (el pinzell) i dibuixa un quadrat vermell gran. Anomena'l <b>Vermell</b>.`,
    `${B('ev','quan es cliqui aquest personatge')} → ${B('lo',"fixa l'efecte [brillantor] a {50}")}.`,
    `→ ${B('pe','toca la nota {60} durant {0.3} pulsacions')} → ${B('lo',"fixa l'efecte [brillantor] a {0}")}.`,
-   `Duplica'l 3 vegades: <b>Blau</b> (nota 64), <b>Verd</b> (nota 67) i <b>Groc</b> (nota 72). Pinta'ls i col·loca'ls en quadrat.`],
+   `Per triar la nota, clica el número del bloc de nota: surt un piano. Pots clicar una tecla o escriure el número.`,
+   `Duplica el Vermell 3 vegades i posa'ls de nom <b>Blau</b>, <b>Verd</b> i <b>Groc</b>. A cada un, pinta el quadrat del seu color (pestanya Vestits) i canvia la nota: Blau <b>64</b>, Verd <b>67</b>, Groc <b>72</b>.`,
+   `Col·loca els quatre botons en quadrat a l'escenari: Vermell i Blau a dalt, Verd i Groc a baix.`],
   hint:"Si el botó es queda encès, et falta l'últim bloc que torna la brillantor a 0.",
   extra:"Fes que la brillantor pugi a poc a poc amb un «repeteix 5» i «augmenta l'efecte brillantor en 10».",
   puzzle:{type:'quiz',q:"Per què posem la brillantor a 0 al final?",options:["Perquè el botó torni al seu color normal","Perquè soni més fort","Perquè el botó desaparegui"],answer:0,explain:"Exacte! Encendre i apagar fa l'efecte d'un llum."}
 },
 { name:'Una llista de colors', concept:'Llistes', col:'li', piece:'Llista seqüència',
   story:"El Simó ha de recordar molts colors seguits. Per això farem servir una llista.",
-  idea:"Una llista és com una variable amb moltes caselles numerades. A la casella 1 hi ha el primer color, a la 2 el segon… Cada color és un número: 1 vermell, 2 blau, 3 verd, 4 groc.",
+  idea:"Una llista és com una variable amb moltes caselles numerades: a la casella 1 hi ha el primer color, a la 2 el segon… Però l'ordinador no sap triar «un color a l'atzar». Sí que sap triar <b>un número a l'atzar</b>! Per això fem un pacte, com un codi secret: 1 vol dir vermell, 2 vol dir blau, 3 vol dir verd i 4 vol dir groc. A la llista guardem números, i nosaltres sabem quin color és cada número.",
   note:"Clica <b>Comença</b> i mira com s'omple la llista de la dreta.",
-  widget:`<p class="simnote"><b style="color:#E5484D">1 vermell</b> · <b style="color:#4C97FF">2 blau</b> · <b style="color:#3DB86B">3 verd</b> · <b style="color:#C99700">4 groc</b></p>`,
+  widget:`<p class="simnote"><b>Codi dels colors:</b> <b style="color:#E5484D">1 = vermell</b> · <b style="color:#4C97FF">2 = blau</b> · <b style="color:#3DB86B">3 = verd</b> · <b style="color:#C99700">4 = groc</b></p>`,
   scripts:[{spr:'Escenari',tag:'Programa nou',b:[hatFlag({g:1}),{c:'li',t:'esborra-ho tot de [seqüència]',k:'clr'},{c:'co',t:'repeteix {3}',body:[sAdd(),{c:'co',t:'espera {0.3} segons'}]}]}],
   steps:[
-   `A ${CAT('va')}, clica <b>Crea una llista</b> i posa-li de nom <b>seqüència</b>.`,
-   `A l'<b>Escenari</b>: bandera → ${B('li','esborra-ho tot de [seqüència]')}.`,
-   `→ ${B('co','repeteix {3}')} amb ${B('li',"afegeix ‹op:nombre a l'atzar entre {1} i {4}› a [seqüència]")} i ${B('co','espera {0.3} segons')}.`],
+   `Primer, el codi dels colors. Escriu-lo en un paper i deixa'l al costat de l'ordinador: <b>1 = vermell, 2 = blau, 3 = verd, 4 = groc</b>. És el mateix ordre en què vas fer els botons.`,
+   `A ${CAT('va')}, clica <b>Crea una llista</b> i posa-li de nom <b>seqüència</b>. A l'escenari apareix un quadre buit: és la llista.`,
+   `Clica l'<b>Escenari</b> (a baix a la dreta) i fes: bandera → ${B('li','esborra-ho tot de [seqüència]')}.`,
+   `→ ${B('co','repeteix {3}')}. A dins, ${B('li','afegeix {cosa} a [seqüència]')}: on posa «cosa», arrossega-hi ${R('op',"nombre a l'atzar entre {1} i {4}")} (és a ${CAT('op')}).`,
+   `A dins del repeteix, a sota: ${B('co','espera {0.3} segons')}. Clica la bandera: a la llista hi surten 3 números. Amb el paper, endevina quins colors són!`],
   hint:"Si la llista es fa cada cop més llarga, et falta l'«esborra-ho tot» al principi.",
   extra:"Canvia el 3 per 5. Ara el Simó tindrà més memòria!",
-  puzzle:{type:'quiz',q:"Per què al principi esborrem tota la llista?",options:["Perquè no quedin colors de la partida anterior","Perquè la llista és massa llarga","No cal"],answer:0,explain:"Exacte! Com amb les variables, cada partida ha de començar neta."}
+  puzzle:{type:'quiz',q:"Si a la llista hi ha el número 4, quin color vol dir?",options:["Groc","Vermell","Blau"],answer:0,explain:"Exacte! Segons el nostre codi: 1 vermell, 2 blau, 3 verd i 4 groc."}
 },
 { name:'El Simó ho mostra', concept:'Recórrer una llista', col:'li', piece:'Mostrar la seqüència',
   story:"Ara el Simó encén els colors de la llista, un per un.",
-  idea:"Fem servir una variable «pas» que comença a 1. A cada volta, enviem el missatge del color que hi ha a la casella «pas» i hi sumem 1. Així passem per totes les caselles.",
+  idea:"Imagina que llegeixes la llista amb el dit. La variable «pas» és el teu dit: diu quina casella estàs mirant. Comença a 1 (la primera casella). El Simó mira el número que hi ha en aquella casella i envia un missatge amb aquest número. Cada botó escolta el seu número: el Vermell escolta «1», el Blau «2», el Verd «3» i el Groc «4». Després el dit avança una casella (pas + 1), i així fins al final.",
   note:"Mira com el Simó encén els colors en l'ordre de la llista.",
-  widget:`<p class="simnote"><b style="color:#E5484D">1 vermell</b> · <b style="color:#4C97FF">2 blau</b> · <b style="color:#3DB86B">3 verd</b> · <b style="color:#C99700">4 groc</b></p>`,
+  widget:`<p class="simnote"><b>Codi dels colors:</b> <b style="color:#E5484D">1 = vermell</b> · <b style="color:#4C97FF">2 = blau</b> · <b style="color:#3DB86B">3 = verd</b> · <b style="color:#C99700">4 = groc</b></p>`,
   scripts:[{spr:'Escenari',b:[hatFlag({g:1}),{c:'li',t:'esborra-ho tot de [seqüència]',k:'clr',g:1},{c:'co',t:'repeteix {3}',g:1,body:[sAdd(1),{c:'co',t:'espera {0.3} segons',g:1}]},...sShow()]},
    {spr:'Vermell',tag:'Programa nou',b:[{c:'ev',t:'quan rebi [1]',hat:1,k:'r1'},...sLight(1)]}],
   scriptnote:"Fes el mateix als altres botons: el Blau rep «2», el Verd «3» i el Groc «4».",
   distract:[{c:'va',t:'augmenta [pas] en {-1}'}],
   steps:[
-   `Crea la variable <b>pas</b>. A l'Escenari, al final: ${B('va','assigna a [pas] el valor {1}')}.`,
-   `Afegeix ${B('co','repeteix {10}')} i, al forat, posa ${R('li','llargada de [seqüència]')}.`,
-   `A dins: ${B('ev','envia a tots [missatge1] i espera')} amb ${R('li','element ‹va:pas› de [seqüència]')} al forat, i ${B('va','augmenta [pas] en {1}')}.`,
-   `Crea els missatges <b>1</b>, <b>2</b>, <b>3</b> i <b>4</b>. Al Vermell: ${B('ev','quan rebi [1]')} amb els blocs d'encendre.`,
-   `Fes el mateix als altres botons amb el seu número.`],
-  hint:"Si només s'encén el primer color, et falta el «augmenta pas en 1» dins del repeteix.",
+   `<b>Crea la variable pas</b>: a ${CAT('va')}, clica «Crea una variable», escriu <b>pas</b>, deixa marcat «Per a tots els personatges» i clica D'acord.`,
+   `<b>Crea els missatges 1, 2, 3 i 4.</b> Agafa un bloc ${B('ev','quan rebi [missatge1]')}, clica el triangle ▾, tria «Nou missatge» i escriu <b>1</b>. Repeteix-ho per fer el <b>2</b>, el <b>3</b> i el <b>4</b>. Els missatges es diuen igual que els números del codi dels colors.`,
+   `Al <b>Vermell</b>: ${B('ev','quan rebi [1]')} i, a sota, els mateixos 3 blocs d'encendre que té el seu programa del clic (pots duplicar-los amb el botó dret → Duplica).`,
+   `Fes el mateix als altres botons: el <b>Blau</b> amb ${B('ev','quan rebi [2]')}, el <b>Verd</b> amb «quan rebi 3» i el <b>Groc</b> amb «quan rebi 4».`,
+   `Ara clica l'<b>Escenari</b>. Al final del programa de la bandera, posa ${B('va','assigna a [pas] el valor {1}')}: el dit comença a la casella 1.`,
+   `A sota, ${B('co','repeteix {10}')}. On posa 10, arrossega-hi ${R('li','llargada de [seqüència]')}: així es repeteix tantes vegades com caselles té la llista.`,
+   `A dins del repeteix: ${B('ev','envia a tots [1] i espera')}. Al seu forat, arrossega-hi ${R('li','element {1} de [seqüència]')}, i dins del «1» d'aquest bloc posa-hi la variable ${R('va','pas')}. Ara diu ${R('li','element ‹va:pas› de [seqüència]')}.`,
+   `A sota, dins del repeteix: ${B('va','augmenta [pas] en {1}')}: el dit avança una casella.`],
+  hint:"Si només s'encén el primer color, et falta el «augmenta pas en 1» dins del repeteix. Si no s'encén cap botó, mira que els missatges es diguin exactament 1, 2, 3 i 4.",
+  tip:"Fem servir «envia a tots … i espera» perquè el Simó esperi que el botó s'apagui abans d'encendre el següent. Sense «i espera», s'encendrien tots de cop!",
   extra:"Fes que el Simó vagi més ràpid a cada ronda canviant el temps de la nota.",
   puzzle:{type:'quiz',q:"Si la llista és 3, 1, 4, quin color s'encén primer?",options:["El verd (el número 3)","El vermell (el número 1)","El groc (el número 4)"],answer:0,explain:"Exacte! La casella 1 té un 3, i el 3 és el verd."}
 },
 { name:'Et toca!', concept:'Comparar llistes', col:'op', piece:'Torn del jugador',
   story:"Ara et toca a tu. Has de clicar els colors en el mateix ordre. El Simó comprova si ho has fet bé.",
-  idea:"Cada clic afegeix el número del botó a una altra llista: «resposta». Quan les dues llistes tenen la mateixa llargada, el Simó les compara.",
+  idea:"Cada clic afegeix el número del botó (el mateix codi: 1 vermell, 2 blau, 3 verd, 4 groc) a una altra llista: «resposta». Quan la resposta té tantes caselles com la seqüència, el Simó compara les dues llistes. Si tenen els mateixos números en el mateix ordre, ho has fet bé!",
+  widget:`<p class="simnote"><b style="color:#E5484D">1 = vermell</b> · <b style="color:#4C97FF">2 = blau</b> · <b style="color:#3DB86B">3 = verd</b> · <b style="color:#C99700">4 = groc</b></p>`,
   note:"Mira la seqüència i després repeteix-la clicant els botons.",
   scripts:[{spr:'Vermell',b:[{c:'ev',t:'quan es cliqui aquest personatge',hat:1,k:'bclick',g:1},{c:'li',t:'afegeix {1} a [resposta]',k:'addr',nw:1},...sLight(1)]},
    {spr:'Escenari',b:[hatFlag({g:1}),{c:'li',t:'esborra-ho tot de [seqüència]',k:'clr',g:1},{c:'co',t:'repeteix {3}',g:1,body:[sAdd(1),{c:'co',t:'espera {0.3} segons',g:1}]},...sShow(1),{c:'li',t:'esborra-ho tot de [resposta]',k:'clrr',nw:1},{c:'ev',t:'envia a tots [et toca]',k:'ettoca',nw:1}]},
    {spr:'Simó',tag:'Personatge nou',b:[{c:'ev',t:'quan rebi [et toca]',hat:1,k:'ettoca'},{c:'co',t:'espera fins «op:‹li:llargada de [resposta]› = ‹li:llargada de [seqüència]›»',k:'wait'},sCmp({ok:[{c:'lo',t:'digues {Molt bé!}',g:1}],no:[{c:'lo',t:'digues {Oh, no!}',g:1}]})]}],
   scriptnote:"Als altres botons, afegeix el seu número: el Blau afegeix 2, el Verd 3 i el Groc 4.",
   steps:[
-   `Crea una llista nova: <b>resposta</b>.`,
-   `Al Vermell, al programa del clic: ${B('li','afegeix {1} a [resposta]')}. Als altres botons, el seu número.`,
-   `A l'Escenari, al final: ${B('li','esborra-ho tot de [resposta]')} i ${B('ev','envia a tots [et toca]')}.`,
-   `Afegeix un personatge, <b>Simó</b>: ${B('ev','quan rebi [et toca]')} → ${B('co','espera fins «»')} amb ${BB('op','‹li:llargada de [resposta]› = ‹li:llargada de [seqüència]›')}.`,
-   `A sota: un «si … si no» amb ${BB('op','‹li:resposta› = ‹li:seqüència›')}. A dalt «Molt bé!», a baix «Oh, no!».`],
+   `A ${CAT('va')}, clica «Crea una llista» i fes-ne una de nova: <b>resposta</b>.`,
+   `Al <b>Vermell</b>, al programa del clic, just a sota del barret: ${B('li','afegeix {1} a [resposta]')} (tria «resposta» al triangle ▾).`,
+   `Fes el mateix als altres botons, cada un amb el seu número del codi: el Blau afegeix <b>2</b>, el Verd <b>3</b> i el Groc <b>4</b>.`,
+   `A l'<b>Escenari</b>, al final de tot del programa de la bandera (fora del repeteix): ${B('li','esborra-ho tot de [resposta]')} i ${B('ev','envia a tots [et toca]')}. El missatge «et toca» el crees amb «Nou missatge».`,
+   `Al personatge <b>Simó</b>: ${B('ev','quan rebi [et toca]')} → ${B('co','espera fins «»')}. Al forat hexagonal, posa ${BB('op','‹li:llargada de [resposta]› = ‹li:llargada de [seqüència]›')}.`,
+   `A sota, un ${B('co','si «» llavors')} amb ${BB('op','‹li:resposta› = ‹li:seqüència›')}. Els blocs rodons «resposta» i «seqüència» són a ${CAT('va')}, a sota de «Crea una llista». Fes servir el bloc que té «si no».`,
+   `Al forat de dalt, ${B('lo','digues {Molt bé!}')}. Al forat de baix (si no), ${B('lo','digues {Oh, no!}')}.`],
   hint:"Si el Simó contesta abans que acabis, mira que el seu programa comenci amb «quan rebi [et toca]» i no amb la bandera.",
   extra:"Fes que, si t'equivoques, tots els botons s'encenguin alhora.",
   puzzle:{type:'quiz',q:"Quan compara les dues llistes el Simó?",options:["Quan la resposta és igual de llarga que la seqüència","Quan cliques la bandera","Cada segon"],answer:0,explain:"Exacte! Ha d'esperar que hagis clicat tots els colors."}
@@ -2642,14 +3363,17 @@ GAMES.push({id:'simo',name:'Simó Diu',col:'li',stars:5,final:6,
    {spr:'Escenari',b:[hatFlag({g:1}),{c:'li',t:'esborra-ho tot de [seqüència]',k:'clr',g:1},{c:'va',t:'assigna a [rondes] el valor {0}',k:'r0'},{c:'my',t:'nova ronda'}]},
    {spr:'Escenari',tag:'Programa nou',b:[{c:'ev',t:'quan rebi [nova ronda]',hat:1},{c:'my',t:'nova ronda'}]},
    {spr:'Simó',b:[{c:'ev',t:'quan rebi [et toca]',hat:1,k:'ettoca',g:1},{c:'co',t:'espera fins «op:‹li:llargada de [resposta]› = ‹li:llargada de [seqüència]›»',k:'wait',g:1},
-    sCmp({g:1,ok:[{c:'va',t:'augmenta [rondes] en {1}',k:'rnd'},{c:'co',t:'espera {0.5} segons',g:1},{c:'ev',t:'envia a tots [nova ronda]',k:'envia'}],no:[{c:'lo',t:'digues ‹op:uneix {Rondes: } i ‹va:rondes››'},{c:'co',t:'atura [tot]',g:1}]})]}],
+    sCmp({g:1,ok:[{c:'va',t:'augmenta [rondes] en {1}',k:'rnd'},{c:'co',t:'espera {0.5} segons'},{c:'ev',t:'envia a tots [nova ronda]',k:'envia'}],no:[{c:'lo',t:'digues ‹op:uneix {Rondes: } i ‹va:rondes››'},{c:'co',t:'atura [tot]'}]})]}],
   distract:[{c:'li',t:'esborra-ho tot de [seqüència]'}],
   steps:[
-   `A l'Escenari, a ${CAT('my')}, clica <b>Crea un bloc</b>: <b>nova ronda</b>.`,
-   `Sota ${B('my','defineix [nova ronda]')}, posa: esborra la resposta, afegeix un color a l'atzar, mostra la seqüència (el bloc de «pas») i ${B('ev','envia a tots [et toca]')}.`,
-   `Bandera de l'Escenari: esborra la seqüència, ${B('va','assigna a [rondes] el valor {0}')} i ${B('my','nova ronda')}.`,
-   `A l'Escenari: ${B('ev','quan rebi [nova ronda]')} → ${B('my','nova ronda')}.`,
-   `Al Simó, si encertes: ${B('va','augmenta [rondes] en {1}')}, espera 0.5 i ${B('ev','envia a tots [nova ronda]')}. Si no: digues les rondes i atura tot.`],
+   `Crea la variable <b>rondes</b> (per a tots els personatges) i el missatge <b>nova ronda</b> (amb «Nou missatge»).`,
+   `Clica l'<b>Escenari</b>. A ${CAT('my')}, clica <b>Crea un bloc</b>, escriu <b>nova ronda</b> i clica D'acord. Apareix el barret ${B('my','defineix [nova ronda]')}.`,
+   `Ara reorganitzem el programa de la bandera. Treu-ne el ${B('co','repeteix {3}')}: arrossega el bloc «afegeix nombre a l'atzar… a seqüència» que hi havia a dins fins a sota del «defineix nova ronda». El «repeteix 3» i l'«espera 0.3» ja no calen: llença'ls a la zona dels blocs.`,
+   `Sota el «defineix», posa'ls en aquest ordre: ${B('li','esborra-ho tot de [resposta]')}, l'«afegeix… a seqüència», l'«assigna a pas el valor 1» amb el seu repeteix (els blocs de mostrar), i ${B('ev','envia a tots [et toca]')}. Tots ja eren al programa de la bandera: només els has de moure.`,
+   `El programa de la bandera queda així: bandera → ${B('li','esborra-ho tot de [seqüència]')} → ${B('va','assigna a [rondes] el valor {0}')} → ${B('my','nova ronda')} (el bloc rosa de ${CAT('my')}).`,
+   `Encara a l'Escenari, un programa nou: ${B('ev','quan rebi [nova ronda]')} → ${B('my','nova ronda')}.`,
+   `Al <b>Simó</b>, al forat de dalt del «si», treu el «digues Molt bé!» i posa ${B('va','augmenta [rondes] en {1}')}, ${B('co','espera {0.5} segons')} i ${B('ev','envia a tots [nova ronda]')}.`,
+   `Al forat de baix (si no), canvia el «digues Oh, no!» per ${B('lo','digues ‹op:uneix {Rondes: } i ‹va:rondes››')} i, a sota, ${B('co','atura [tot]')}.`],
   tip:"Els blocs propis només funcionen dins del mateix personatge. Per això el Simó envia un missatge a l'escenari.",
   hint:"Si la seqüència no creix, mira que «nova ronda» afegeixi un color i que NO esborri la seqüència.",
   extra:"Fes que el Simó vagi més ràpid a partir de la ronda 5.",
@@ -2662,15 +3386,96 @@ GAMES.push({id:'simo',name:'Simó Diu',col:'li',stars:5,final:6,
   scripts:[{spr:'Simó',b:[{c:'ev',t:'quan rebi [et toca]',hat:1,k:'ettoca',g:1},{c:'co',t:'espera fins «op:‹li:llargada de [resposta]› = ‹li:llargada de [seqüència]›»',k:'wait',g:1},
     sCmp({g:1,ok:[{c:'va',t:'augmenta [rondes] en {1}',k:'rnd',g:1},{c:'co',t:'espera {0.5} segons',g:1},{c:'ev',t:'envia a tots [nova ronda]',k:'envia',g:1}],no:[{c:'co',t:'si «op:‹va:rondes› > ‹va:rècord›» llavors',k:'rec',nw:1,body:[{c:'va',t:'assigna a [rècord] el valor ‹va:rondes›',nw:1}]},{c:'lo',t:'digues ‹op:uneix {Rondes: } i ‹va:rondes››',g:1},{c:'co',t:'atura [tot]',g:1}]})]}],
   scriptnote:"Els programes de l'escenari i dels botons es queden igual.",
+  tip:"El bloc «si … llavors» nou va DINS del forat «si no» del si gran, abans del «digues». Així només es comprova quan perds.",
   distract:[{c:'va',t:'assigna a [rècord] el valor {0}'}],
   steps:[
-   `Crea la variable <b>rècord</b>.`,
+   `Crea la variable <b>rècord</b> (per a tots els personatges). No la posis a 0 enlloc!`,
    `Al Simó, al forat «si no», abans del «digues»: ${B('co','si «op:‹va:rondes› > ‹va:rècord›» llavors')}.`,
    `A dins: ${B('va','assigna a [rècord] el valor ‹va:rondes›')}.`],
   hint:"Si el rècord sempre és 0, potser tens un «assigna a rècord el valor 0» a la bandera. Treu-lo!",
   extra:"Fes que el Simó digui «Nou rècord!» quan el superes.",
   puzzle:{type:'quiz',q:"Per què NO posem «assigna a rècord el valor 0» a la bandera verda?",options:["Perquè el rècord s'ha de guardar entre partides","Perquè no cal variable","Perquè el rècord sempre és 0"],answer:0,explain:"Exacte! Si el posem a 0, cada partida l'oblidaríem."}
 }]});
+
+/* ===================== Objectiu de cada missió («Què has d'aconseguir») ===================== */
+const GOALS={
+nau:[
+ ["Obre Scratch en català.","Posa el fons d'estrelles i el personatge de la nau a l'escenari, amb el nom «Nau»."],
+ ["Quan cliques la bandera verda, la nau apareix a baix de tot de l'escenari.","La nau puja a poc a poc una mica.","Quan arriba, diu «Hola! Som-hi!» durant 2 segons."],
+ ["Amb la fletxa dreta, la nau va cap a la dreta.","Amb la fletxa esquerra, va cap a l'esquerra.","Amb les fletxes amunt i avall, la nau puja i baixa."],
+ ["Apareix una estrella en un lloc a l'atzar.","L'estrella gira sense parar fins que atures el joc."],
+ ["Quan la nau toca l'estrella, sona un «pop».","L'estrella salta a un altre lloc a l'atzar i continua girant."],
+ ["Al principi, els punts són 0.","Cada vegada que la nau atrapa una estrella, els punts pugen 1."],
+ ["Un meteorit surt de dalt de tot, en un lloc a l'atzar.","El meteorit cau cap avall.","Quan arriba a baix, torna a sortir per dalt. De moment no fa mal a la nau."],
+ ["Comences amb 3 vides.","Si un meteorit toca la nau, perds una vida i el meteorit torna a dalt.","Quan arribes a 0 vides, la nau diu «Game Over!» i el joc s'atura."],
+ ["Cada estrella que atrapes fa que els meteorits caiguin una mica més ràpid.","Quan arribes a 10 punts, la nau diu «Has guanyat!» i el joc s'atura."]],
+papallona:[
+ ["La papallona comença al centre.","Quan mous el ratolí, la papallona vola cap a ell i el segueix tota l'estona."],
+ ["La papallona mou les ales sense parar mentre vola.","Les ales canvien de dibuix molt de pressa: cada 0.2 segons."],
+ ["Apareix una flor en un lloc a l'atzar.","Quan la papallona toca la flor, sona un «pop» i la flor salta a un altre lloc."],
+ ["Al principi, els punts són 0.","Cada flor que menja la papallona suma 1 punt."],
+ ["El temps comença a 30.","Cada segon, el temps baixa 1.","Quan arriba a 0, el joc s'atura."],
+ ["Una vespa vola en diagonal i rebota a les vores.","Si la vespa toca la papallona, perds 1 punt.","Després de picar, la vespa espera 1 segon abans de tornar a picar."]],
+pissarra:[
+ ["Quan cliques la bandera, la pissarra s'esborra.","El llapis va al centre i dibuixa una línia recta cap a la dreta."],
+ ["El llapis dibuixa un quadrat: avança i gira, 4 vegades."],
+ ["El llapis dibuixa un triangle: avança i gira 120 graus, 3 vegades."],
+ ["El llapis dibuixa 36 línies, girant 170 graus cada vegada.","Cada línia és d'un color diferent, i surt una estrella de colors."],
+ ["Amb les fletxes, el llapis es mou i dibuixa cap a aquella direcció.","Amb la tecla espai, s'esborra tot el dibuix."],
+ ["Tot el que feia abans continua funcionant.","Quan prems la tecla Q, el llapis dibuixa un quadrat petit allà on és."]],
+robot:[
+ ["El robot pregunta «Com et dius?» i apareix una casella per escriure.","Quan escrius el teu nom, el robot diu «Hola, » i el teu nom."],
+ ["El robot pregunta de quin color és el cel.","Si respons «blau», diu «Correcte!».","Si respons una altra cosa, diu «Oh, no!»."],
+ ["El robot fa dues preguntes.","Cada resposta correcta suma 1 encert.","Al final, el robot diu quants encerts has fet."],
+ ["Al principi, el robot té la cara normal.","Quan encertes, posa cara contenta.","Quan t'equivoques, posa cara trista."],
+ ["Al final, si has encertat les 2 preguntes, el robot diu «Ets un geni!».","Si no, diu «Segueix practicant!»."],
+ ["Després de la nota final, el robot fa una pregunta extra: «Quin animal fa mèu?».","Si t'equivoques, la torna a fer, fins que respons «gat».","Quan l'encertes, diu «Sí! És el gat!»."]],
+talps:[
+ ["El talp s'amaga, espera un temps sorpresa (entre 1 i 2 segons) i surt en un lloc a l'atzar.","Es queda 1 segon i torna a amagar-se. Això es repeteix sempre."],
+ ["Quan cliques el talp, fa «pop» i s'amaga."],
+ ["Al principi, els punts són 0.","Cada talp que piques suma 1 punt."],
+ ["La partida dura 20 segons.","Quan s'acaba el temps, l'escenari envia el missatge «fi del joc».","Quan el talp rep el missatge, s'amaga i ja no surt més."],
+ ["De tant en tant surt un talp daurat, i només s'hi està una estona molt curta.","Si el piques, guanyes 3 punts."],
+ ["Quan cliques la bandera, només surt el botó JUGA.","Quan cliques JUGA, el botó s'amaga i comença la partida: surten els talps i el temps compta enrere."]],
+granota:[
+ ["La granota està a terra, a l'esquerra.","Quan prems l'espai, puja i torna a baixar."],
+ ["Quan prems l'espai, la granota salta ràpid i va frenant.","Després cau i s'atura a terra, com un salt de veritat.","Només pot saltar quan és a terra: si prems l'espai a l'aire, no passa res."],
+ ["Un tronc surt per la dreta i rodola cap a l'esquerra.","Quan arriba a l'esquerra de tot, torna a sortir per la dreta. De moment no fa mal."],
+ ["Si el tronc toca la granota, la granota diu «Ai!» i el joc s'atura.","Has de saltar els troncs per continuar jugant."],
+ ["Al principi, els punts són 0.","Cada tronc que saltes suma 1 punt (quan el tronc torna a la dreta)."],
+ ["Cada tronc saltat fa que el següent vingui una mica més ràpid.","La rapidesa comença a -6 i es fa cada cop més negativa: -6.5, -7…"]],
+pesca:[
+ ["Un peix neda d'esquerra a dreta.","Quan toca la vora, es gira i torna enrere, sense posar-se cap per avall."],
+ ["Un ham segueix el ratolí.","Quan el peix toca l'ham, suma 1 punt i torna a sortir per l'esquerra."],
+ ["El peix original s'amaga.","Apareixen 5 peixos iguals (còpies), un cada segon, i neden pel llac.","De moment encara no es poden pescar."],
+ ["Quan un peix (una còpia) toca l'ham, suma 1 punt i aquell peix desapareix.","Els altres peixos continuen nedant."],
+ ["Cada peix nou surt d'un color i d'una mida diferents."],
+ ["Surten peixos sense parar, d'esquerra a dreta, un cada segon i mig.","Quan un peix arriba a la dreta de tot, desapareix.","Encara pots pescar-los amb l'ham."],
+ ["Un tauró neda d'un costat a l'altre i rebota a les vores, sense posar-se cap per avall.","Si el tauró toca l'ham, diu «Ñam!» i el joc s'atura."]],
+laberint:[
+ ["L'explorador comença a baix a l'esquerra.","Mentre mantens premuda una fletxa, es mou suaument cap a aquella direcció.","De moment pot travessar les parets."],
+ ["Si l'explorador toca una paret blava, torna a l'inici."],
+ ["Quan l'explorador arriba a l'estrella, passa al laberint següent i torna a l'inici.","Fixa't: si tornes a començar, comences al nivell on eres."],
+ ["Quan cliques la bandera, el joc comença sempre al Nivell 1.","Quan passes el Nivell 3, apareix el fons Final i l'explorador diu «He escapat!»."],
+ ["El cronòmetre es posa a 0 quan comença el joc.","Quan escapes, l'explorador diu quants segons has trigat."],
+ ["Un fantasma patrulla amunt i avall.","Si el fantasma toca l'explorador, l'explorador torna a l'inici."]],
+pong:[
+ ["La pilota surt del centre en diagonal.","Rebota a totes les vores de l'escenari, sense parar."],
+ ["Amb la tecla W, la pala esquerra puja.","Amb la tecla S, baixa.","De moment la pilota la travessa."],
+ ["La pala dreta es mou amb les fletxes amunt i avall.","Quan la pilota toca qualsevol de les dues pales, rebota cap a l'altre costat."],
+ ["Si la pilota toca la línia vermella (esquerra), és punt per al jugador de la dreta.","Si toca la línia blava (dreta), és punt per al de l'esquerra.","Després de cada gol, la pilota torna al centre."],
+ ["Quan un jugador arriba a 5 punts, la pilota diu qui ha guanyat i el joc s'atura."],
+ ["La pilota comença amb rapidesa 6.","Cada vegada que toca una pala, va una mica més ràpid.","Després d'un gol, torna a la rapidesa 6."],
+ ["La pala de la dreta es mou sola: si la pilota és més amunt, puja; si és més avall, baixa.","Es mou a poc a poc, de 5 en 5, perquè la puguis guanyar.","Tu jugues amb la pala de l'esquerra (W i S)."]],
+simo:[
+ ["Quan cliques un botó de color, s'il·lumina i fa una nota musical.","Cada botó fa una nota diferent."],
+ ["Quan cliques la bandera, la llista «seqüència» es buida.","Després s'hi afegeixen 3 números a l'atzar entre 1 i 4 (cada número és un color)."],
+ ["Quan la llista està feta, el Simó encén els colors un per un, en el mateix ordre que la llista."],
+ ["Quan el Simó acaba de mostrar els colors, et toca a tu.","Cada botó que cliques s'afegeix a la llista «resposta».","Quan has clicat tants colors com té la seqüència, el Simó diu «Molt bé!» si són iguals, o «Oh, no!» si no."],
+ ["A cada ronda, el Simó afegeix un color nou a la seqüència i te la torna a mostrar.","Si l'encertes, passes a la ronda següent.","Si t'equivoques, el Simó diu quantes rondes has fet i el joc s'atura."],
+ ["Quan perds, si has fet més rondes que el rècord, el rècord passa a ser el teu número de rondes.","El rècord no es posa a 0 quan tornes a jugar."]]
+};
+GAMES.forEach(G=>(GOALS[G.id]||[]).forEach((g,i)=>{if(G.M[i])G.M[i].goal=g}));
 
 /* ===================== boot ===================== */
 load();
